@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Página Principal</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-black font-[Sora]">
+    <!-- Header -->
+    <header>
+        <div class="border-b border-slate-700">
+            <div class="flex justify-between items-center max-w-7xl mx-auto py-5 px-28">
+                <h1 class="text-blue-400 text-2xl font-medium tracking-normal">devfenrir</h1>
+                <nav class="flex gap-8">
+                    <a class="text-slate-400 hover:text-white" href="#">home</a>
+                    <a class="text-slate-400 hover:text-white" href="#">about</a>
+                    <a class="text-slate-400 hover:text-white" href="#">skills</a>
+                    <a class="text-slate-400 hover:text-white" href="#">projects</a>
+                    <a class="text-slate-400 hover:text-white" href="#">contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Seção Principal -->
+        <section class="text-slate-400">
+            <div class="flex flex-col items-center mt-64 gap-4">
+                <h2 class="text-8xl tracking-tight text-white">Dev<strong class="text-blue-400">Fenrir</strong></h2>
+                <div class="flex items-center gap-4">
+                    <span class="bg-sky-600 w-7 h-1 block bg-linear-to-l from-cyan-500 to-blue-500"></span>
+                    <p class="text-3xl text-neutral-200">Full Stack Developer</p>
+                    <span class="bg-sky-600 w-7 h-1 block bg-linear-to-r from-cyan-500 to-blue-500"></span>
+                </div>
+                <p class="text-xl w-4xl text-center p-3">Desenvolvedor especializado em criar aplicações modernas e
+                    escaláveis. Foco em performance,
+                    experiência do usuário e código limpo.</p>
+                <div class="flex items-center gap-8 pt-8">
+                    <div
+                        class="flex items-center bg-sky-700 p-3 pl-8 pr-5 gap-3 rounded-lg hover:bg-sky-600 transition-colors duration-300">
+                        <a class="text-white" href="#">Ver trabalhos</a>
+                        <img src="/assets/arrow-icon.svg" alt="#">
+                    </div>
+                    <div
+                        class="border border-slate-300 p-3 pl-8 pr-5 rounded-lg hover:bg-white hover:text-neutral-800 hover:font-semibold transition-colors duration-300">
+                        <a href="">Download CV</a>
+                    </div>
+                </div>
+                <div class="flex gap-4 pt-10">
+                    <a class="hover:bg-sky-600/20 transition-colors duration-300 p-2 rounded" href="#"><img
+                            src="/assets/email-icon.svg" alt=""></a>
+                    <a class="hover:bg-sky-600/20 transition-colors duration-300 p-2 rounded" href="#"><img
+                            src="/assets/github-icon.svg" alt=""></a>
+                    <a class="hover:bg-sky-600/20 transition-colors duration-300 p-2 rounded" href="#"><img
+                            src="/assets/linkedin-icon.svg" alt=""></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção About me -->
+        <section class="border-t border-slate-700 mt-48">
+            <div class="mt-30">
+                <h2 class="text-neutral-200 text-center text-5xl">About me</h2>
+                <div class="flex items-center px-20 gap-20 justify-center">
+                    <div class="w-130 flex flex-col gap-8">
+                        <p class="text-slate-400 text-xl">Sou um desenvolvedor Full Stack em constante evolução,
+                            apaixonado por criar aplicações
+                            modernas, performáticas e com foco em experiência do usuário.</p>
+                        <p class="text-slate-400 text-xl"> Tenho conhecimento em tecnologias como HTML, CSS, JavaScript,
+                            Tailwind CSS, Bootstrap,
+                            Python e Java, com aprendizado contínuo em frameworks e boas práticas de desenvolvimento.
+                        </p>
+                        <p class="text-slate-400 text-xl">Busco sempre escrever código limpo, escalável e com atenção
+                            aos detalhes de design e
+                            usabilidade.</p>
+                    </div>
+                    <div class="pl-5"> 
+                        <img class="w-120" src="/assets/fenrir.png"
+                            alt="imagem de um lobo fazendo referência ao fenrir, lobo mitológico nórdico">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
