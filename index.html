@@ -27,10 +27,14 @@
         .nav-link:hover::after {
             width: 100%;
         }
+
+        .gradiente {
+            background: linear-gradient(135deg, #000000, #000000, #000510);
+        }
     </style>
 </head>
 
-<body class="bg-black font-[Sora]">
+<body class="gradiente font-[Sora]">
 
     <!-- Header -->
     <header class="fixed top-0 right-0 left-0 z-40" data-header>
@@ -89,7 +93,8 @@
                 <h2 class="text-neutral-200 text-center text-5xl">About me</h2>
                 <div class="flex items-center gap-20 justify-center">
                     <div class="w-220 flex flex-col gap-8">
-                        <p class="text-slate-400 text-xl">Sou um desenvolvedor Full Stack em constante evolução,
+                        <p class="text-slate-400 text-xl">Me chamo Felipe, sou um desenvolvedor Full Stack em constante
+                            evolução,
                             apaixonado por criar aplicações
                             modernas, performáticas e com foco em experiência do usuário.</p>
                         <p class="text-slate-400 text-xl"> Tenho conhecimento em tecnologias como HTML, CSS, JavaScript,
@@ -224,17 +229,16 @@
                 contato
                 para
                 discutirmos seu próximo projeto.</p>
-            <div class="flex items-center justify-center gap-5 pt-4">
-                <div class="w-160 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
-                    <label for="">Email</label>
-                </div>
+            <div class="flex justify-center items-center gap-6 pt-4">
+                <button class="flex items-center bg-sky-600 p-3 pl-4 pr-5 gap-3 rounded text-neutral-200"><img class="w-7" src="/assets/email-branco.svg" alt="">Enviar um email</button>
+                <a class="flex items-center border border-sky-600 p-3 pl-4 pr-5 gap-3 rounded text-neutral-200" href="#"><img class="w-7" src="/assets/linkedin-branco.svg" alt="">Contato via Linkedin</a>
             </div>
         </section>
 
         <!-- Rodapé -->
         <footer class="mt-20">
             <div class="border-t border-slate-900">
-                <p class="pt-10 pb-9 text-center text-neutral-500">© 2024 devfenrir. Desenvolvido Tailwind CSS.</p>
+                <p class="pt-10 pb-9 text-center text-neutral-500">© 2024 devfenrir. Desenvolvido com Tailwind CSS.</p>
             </div>
         </footer>
     </main>
