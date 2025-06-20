@@ -6,21 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Página Principal</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .nav-link {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #38bdf8;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body class="bg-black font-[Sora]">
 
     <!-- Header -->
-    <header>
+    <header class="fixed top-0 right-0 left-0 z-40" data-header>
         <div class="border-b border-slate-700">
             <div class="flex justify-between items-center max-w-7xl mx-auto py-5 px-28">
                 <h1 class="text-blue-400 text-2xl font-medium tracking-normal">devfenrir</h1>
                 <nav class="flex gap-8">
-                    <a class="text-slate-400 hover:text-white" href="#">home</a>
-                    <a class="text-slate-400 hover:text-white" href="#">about</a>
-                    <a class="text-slate-400 hover:text-white" href="#">skills</a>
-                    <a class="text-slate-400 hover:text-white" href="#">projects</a>
-                    <a class="text-slate-400 hover:text-white" href="#">contact</a>
+                    <a class="nav-link text-slate-400 hover:text-white" href="#">home</a>
+                    <a class="nav-link text-slate-400 hover:text-white" href="#">about</a>
+                    <a class="nav-link text-slate-400 hover:text-white" href="#">skills</a>
+                    <a class="nav-link text-slate-400 hover:text-white" href="#">projects</a>
+                    <a class="nav-link text-slate-400 hover:text-white" href="#">contact</a>
                 </nav>
             </div>
         </div>
@@ -31,11 +53,11 @@
         <!-- Seção Principal -->
         <section class="text-slate-400">
             <div class="flex flex-col items-center mt-64 gap-4">
-                <h2 class="text-8xl tracking-tight text-white">Dev<strong class="text-blue-400">Fenrir</strong></h2>
+                <h2 class="text-9xl tracking-tight text-white">Dev<strong class="text-blue-400">Fenrir</strong></h2>
                 <div class="flex items-center gap-4">
-                    <span class="bg-sky-600 w-7 h-1 block bg-linear-to-l from-cyan-500 to-blue-500"></span>
+                    <span class="bg-sky-600 w-7 h-1 block bg-linear-to-l from-blue-400 to-blue-700"></span>
                     <p class="text-3xl text-neutral-200">Full Stack Developer</p>
-                    <span class="bg-sky-600 w-7 h-1 block bg-linear-to-r from-cyan-500 to-blue-500"></span>
+                    <span class="bg-sky-600 w-7 h-1 block bg-linear-to-r from-blue-400 to-blue-700"></span>
                 </div>
                 <p class="text-xl w-4xl text-center p-3">Desenvolvedor Full Stack com foco em soluções escaláveis e
                     experiência sólida em Java, Python, HTML/CSS, entre outras tecnologias.</p>
@@ -62,11 +84,11 @@
         </section>
 
         <!-- Seção About me -->
-        <section class="border-t border-slate-700 mt-48">
+        <section class="border-t border-slate-900 mt-52 opacity-0 translate-y-5" data-section-about-me>
             <div class="mt-30">
                 <h2 class="text-neutral-200 text-center text-5xl">About me</h2>
                 <div class="flex items-center gap-20 justify-center">
-                    <div class="w-130 flex flex-col gap-8">
+                    <div class="w-220 flex flex-col gap-8">
                         <p class="text-slate-400 text-xl">Sou um desenvolvedor Full Stack em constante evolução,
                             apaixonado por criar aplicações
                             modernas, performáticas e com foco em experiência do usuário.</p>
@@ -87,9 +109,9 @@
         </section>
 
         <!-- Seção Habilidades -->
-        <section class="border-t border-slate-700 mt-34">
+        <section class="border-t border-slate-900 mt-28 opacity-0 translate-y-5" data-section-skills>
             <h2 class="text-neutral-200 text-center text-5xl mt-29">Skills</h2>
-            <div class="flex justify-center gap-10 mt-24">
+            <div class="flex justify-center gap-10 mt-24 opacity-0 translate-y-5" data-section-skills-items>
                 <div
                     class="w-100 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
                     <div class="flex items-center gap-4 pl-5 pt-5">
@@ -112,7 +134,6 @@
                     <div class="pl-5 pt-6 flex flex-col gap-2">
                         <p class="text-neutral-200 font-thin text-lg">Java</p>
                         <p class="text-neutral-200 font-thin text-lg">Python</p>
-                        <p class="text-neutral-200 font-thin text-lg">C#</p>
                     </div>
                 </div>
                 <div
@@ -129,7 +150,8 @@
             </div>
         </section>
 
-        <section class="border-t border-slate-700 mt-34">
+        <!-- Seção Projetos -->
+        <section class="border-t border-slate-900 mt-34 opacity-0 translate-y-5" data-section-projects>
             <h2 class="text-neutral-200 text-center text-5xl mt-29">My Projects</h2>
             <div class="mt-24 grid justify-center gap-4">
                 <div
@@ -196,26 +218,27 @@
         </section>
 
         <!-- Seção Contact -->
-        <section class="border-t border-slate-700 mt-34">
+        <section class="border-t border-slate-900 mt-34">
             <h2 class="text-neutral-200 text-center text-5xl mt-29">Contact</h2>
-            <p class="text-neutral-400 text-light text-center pt-4">Interessado em trabalhar juntos? Entre em contato
+            <p class="text-neutral-400 text-light text-center p-6 text-xl">Interessado(a) em trabalhar juntos? Entre em
+                contato
                 para
                 discutirmos seu próximo projeto.</p>
             <div class="flex items-center justify-center gap-5 pt-4">
-                <a class="pt-2 pb-2 pr-5 pl-4 bg-blue-500 flex items-center rounded gap-2" href="">Entre em contato via
-                    email</a>
-                <a class="pt-2 pb-2 pr-5 pl-4 bg-blue-500 flex items-center rounded gap-2" href="">Entre em contato via
-                    linkedin</a>
+                <div class="w-160 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
+                    <label for="">Email</label>
+                </div>
             </div>
         </section>
 
         <!-- Rodapé -->
         <footer class="mt-20">
-            <div class="border-t border-slate-800">
+            <div class="border-t border-slate-900">
                 <p class="pt-10 pb-9 text-center text-neutral-500">© 2024 devfenrir. Desenvolvido Tailwind CSS.</p>
             </div>
         </footer>
     </main>
+    <script src="/js/scroll.js"></script>
 </body>
 
 </html>
