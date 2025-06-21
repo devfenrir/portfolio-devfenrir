@@ -21,7 +21,7 @@
             bottom: 0;
             width: 0%;
             height: 2px;
-            background-color: #38bdf8;
+            background-color: #035172;
             transition: width 0.3s ease;
         }
 
@@ -34,22 +34,22 @@
             background: linear-gradient(135deg, #000000, #000000, #000510);
         }
 
-        /* Animacao */
-            @keyframes fadeIn {
-                0% {
-                    opacity: 0;
-                    transform: translateY(20px);
-                }
-
-                100% {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
+        /* Registro de Animação*/
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
             }
 
-            .animacao-fadeIn {
-                animation: fadeIn 0.5s ease-out forwards;
+            100% {
+                opacity: 1;
+                transform: translateY(0);
             }
+        }
+
+        .animacao-fadeIn {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
     </style>
 </head>
 
@@ -61,11 +61,11 @@
             <div class="flex justify-between items-center max-w-7xl mx-auto py-5 px-28">
                 <h1 class="text-blue-400 text-2xl font-medium tracking-normal">devfenrir</h1>
                 <nav class="flex gap-8">
-                    <a class="nav-link text-slate-400 hover:text-white" href="#">home</a>
-                    <a class="nav-link text-slate-400 hover:text-white" href="#">about</a>
-                    <a class="nav-link text-slate-400 hover:text-white" href="#">skills</a>
-                    <a class="nav-link text-slate-400 hover:text-white" href="#">projects</a>
-                    <a class="nav-link text-slate-400 hover:text-white" href="#">contact</a>
+                    <a class="nav-link text-slate-400 hover:text-white" href="#secao-principal">home</a>
+                    <a class="nav-link text-slate-400 hover:text-white" href="#section-about-me">about</a>
+                    <a class="nav-link text-slate-400 hover:text-white" href="#section-habilidades">skills</a>
+                    <a class="nav-link text-slate-400 hover:text-white" href="#section-projetos">projects</a>
+                    <a class="nav-link text-slate-400 hover:text-white" href="#section-contatos">contact</a>
                 </nav>
             </div>
         </div>
@@ -74,7 +74,7 @@
     <main>
 
         <!-- Seção Principal -->
-        <section class="text-slate-400">
+        <section class="text-slate-400" id="secao-principal">
             <div class="flex flex-col items-center mt-64 gap-4">
                 <h2 class="text-9xl tracking-tight text-white">Dev<strong class="text-blue-400">Fenrir</strong></h2>
                 <div class="flex items-center gap-4">
@@ -107,7 +107,7 @@
         </section>
 
         <!-- Seção About me -->
-        <section class="border-t border-slate-900 mt-52 opacity-0 translate-y-5" data-section-about-me>
+        <section class="border-t border-slate-900 mt-52 opacity-0 translate-y-5" id="section-about-me" data-section-about-me>
             <div class="mt-30">
                 <h2 class="text-neutral-200 text-center text-5xl">About me</h2>
                 <div class="flex items-center gap-20 justify-center">
@@ -133,7 +133,7 @@
         </section>
 
         <!-- Seção Habilidades -->
-        <section class="border-t border-slate-900 mt-28 opacity-0 translate-y-5" data-section-skills>
+        <section class="border-t border-slate-900 mt-28 opacity-0 translate-y-5" id="section-habilidades" data-section-skills>
             <h2 class="text-neutral-200 text-center text-5xl mt-29">Skills</h2>
             <div class="flex justify-center gap-10 mt-24 opacity-0 translate-y-5" data-section-skills-items>
                 <div
@@ -175,7 +175,7 @@
         </section>
 
         <!-- Seção Projetos -->
-        <section class="border-t border-slate-900 mt-34 opacity-0 translate-y-5" data-section-projects>
+        <section class="border-t border-slate-900 mt-34 opacity-0 translate-y-5" id="section-projetos" data-section-projects>
             <h2 class="text-neutral-200 text-center text-5xl mt-29">My Projects</h2>
             <div class="mt-24 grid justify-center gap-12">
                 <div
@@ -242,14 +242,15 @@
         </section>
 
         <!-- Seção Contact -->
-        <section class="border-t border-slate-900 mt-34">
+        <section class="border-t border-slate-900 mt-34" id="section-contatos">
             <h2 class="text-neutral-200 text-center text-5xl mt-29">Contact</h2>
             <p class="text-neutral-400 text-light text-center p-6 text-xl">Interessado(a) em trabalhar juntos? Entre em
                 contato
                 para
                 discutirmos seu próximo projeto.</p>
             <div class="flex justify-center items-center gap-6 pt-4">
-                <button class="flex items-center bg-sky-600 p-3 pl-4 pr-5 gap-3 rounded text-neutral-200 hover:bg-sky-700 hover:border-sky-300"
+                <button
+                    class="flex items-center bg-sky-600 p-3 pl-4 pr-5 gap-3 rounded text-neutral-200 hover:bg-sky-700 hover:border-sky-300"
                     data-button-send-email><img class="w-7" src="/assets/email-branco.svg" alt="">Enviar um
                     email</button>
                 <a class="flex items-center border border-white p-3 pl-4 pr-5 gap-3 rounded text-neutral-200 hover:bg-black hover:border-gray-900 transition-colors duration-300"
@@ -259,7 +260,8 @@
 
         <!-- Secao Modal Email -->
         <section class="fixed inset-0 bg-black/80 z-40 invisible" data-section-overlay>
-            <div class="fixed left-[650px] top-[330px] w-[590px] h-[260px] bg-slate-950 border border-slate-700 rounded" data-janela-modal>
+            <div class="fixed left-[650px] top-[330px] w-[590px] h-[260px] bg-slate-950 border border-slate-700 rounded"
+                data-janela-modal>
                 <h3 class="text-neutral-300 text-2xl text-center mt-4">Digite a sua mensagem</h3>
                 <form class="">
                     <div class="flex flex-col items-center mt-5">
