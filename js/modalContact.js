@@ -3,12 +3,14 @@ const sectionOverlay = document.querySelector('[data-section-overlay]')
 const sectionClosedButton = document.querySelector('[data-section-closed]')
 
 // Função abre modal
-const openModalEmail = () => {
+const openModalEmail = (evento) => {
+    evento.preventDefault()
     sectionOverlay.classList.remove('invisible')
 }
 
 // Função fecha modal
-const closeModalEmail = () => {
+const closeModalEmail = (evento) => {
+    evento.preventDefault()
     sectionOverlay.classList.add('invisible')
 }
 
