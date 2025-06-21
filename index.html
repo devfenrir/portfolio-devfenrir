@@ -7,7 +7,6 @@
     <title>Portfólio Página Principal</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-
         /* Estilos Locais do Hover Header */
         .nav-link {
             position: relative;
@@ -34,6 +33,23 @@
         .gradiente {
             background: linear-gradient(135deg, #000000, #000000, #000510);
         }
+
+        /* Animacao */
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .animacao-fadeIn {
+                animation: fadeIn 0.5s ease-out forwards;
+            }
     </style>
 </head>
 
@@ -233,7 +249,7 @@
                 para
                 discutirmos seu próximo projeto.</p>
             <div class="flex justify-center items-center gap-6 pt-4">
-                <button class="flex items-center bg-sky-600 p-3 pl-4 pr-5 gap-3 rounded text-neutral-200"
+                <button class="flex items-center bg-sky-600 p-3 pl-4 pr-5 gap-3 rounded text-neutral-200 hover:bg-sky-700 hover:border-sky-300"
                     data-button-send-email><img class="w-7" src="/assets/email-branco.svg" alt="">Enviar um
                     email</button>
                 <a class="flex items-center border border-white p-3 pl-4 pr-5 gap-3 rounded text-neutral-200 hover:bg-black hover:border-gray-900 transition-colors duration-300"
@@ -243,15 +259,20 @@
 
         <!-- Secao Modal Email -->
         <section class="fixed inset-0 bg-black/80 z-40 invisible" data-section-overlay>
-            <div class="fixed left-158 top-97 w-150 min-h-66 bg-slate-950 border border-slate-700 rounded">
+            <div class="fixed left-[650px] top-[330px] w-[590px] h-[260px] bg-slate-950 border border-slate-700 rounded animate-fadeIn">
                 <h3 class="text-neutral-300 text-2xl text-center mt-4">Digite a sua mensagem</h3>
                 <form class="">
                     <div class="flex flex-col items-center mt-5">
                         <label class="pb-2 text-neutral-200" for="mensagem">Mensagem</label>
-                        <textarea placeholder="Escreva sua mensagem ..." class="w-130 h-20 border border-white/50 rounded p-2 text-neutral-200 bg-slate-900 resize-none" id="mensagem"></textarea>
+                        <textarea placeholder="Escreva sua mensagem ..."
+                            class="w-130 h-20 border border-white/50 rounded p-2 text-neutral-200 bg-slate-900 resize-none"
+                            id="mensagem"></textarea>
                         <div class="flex justify-between gap-20 pt-5">
-                            <button class="pt-2 pr-8 pl-8 pb-2 bg-white rounded hover:bg-slate-500 border hover:border-slate-300 transition duration-300" data-section-closed>Fechar</button>
-                            <button class="pt-2 pr-8 pl-8 pb-2 bg-sky-600 rounded hover:bg-sky-400 transition duration-300">Enviar</button>
+                            <button
+                                class="pt-2 pr-8 pl-8 pb-2 bg-white rounded hover:bg-slate-500 border hover:border-slate-300 transition duration-300"
+                                data-section-closed>Fechar</button>
+                            <button
+                                class="pt-2 pr-8 pl-8 pb-2 bg-sky-600 rounded hover:bg-sky-400 transition duration-300">Enviar</button>
                         </div>
                     </div>
                 </form>
