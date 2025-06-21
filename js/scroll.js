@@ -1,120 +1,60 @@
+// Variaveis Gerais para interação com scroll 
+
 const headerComponent = document.querySelector('[data-header]')
-
-// Efeito no Header fixo
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
-        headerComponent.classList.add('backdrop-blur-md',
-            'bg-black/30',
-            'transition-all',
-            'duration-300'
-        )
-    } else {
-        headerComponent.classList.remove('backdrop-blur-md',
-            'bg-black/30',
-            'transition-all',
-            'duration-300'
-        )
-    }
-})
-
-// Efeito na section About me
-
 const sectionAboutMe = document.querySelector('[data-section-about-me]')
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 290) {
-        sectionAboutMe.classList.add('opacity-100',
-            'translate-y-0',
-            'transition-all',
-            'duration-500'
-        )
-        sectionAboutMe.classList.remove('opacity-0',
-            'translate-y-5'
-        )
-    } else {
-        sectionAboutMe.classList.remove('opacity-100',
-            'translate-y-0'
-        )
-        sectionAboutMe.classList.add('opacity-0',
-            'translate-y-5',
-            'transition-all',
-            'duration-500'
-        )
-    }
-})
-
-// Efeito na Section Skills
-
 const sectionKills = document.querySelector('[data-section-skills]')
 const sectionSkillsItems = document.querySelector('[data-section-skills-items]')
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 1150) {
-        sectionKills.classList.add('opacity-100',
-            'translate-y-0',
-            'transition-all',
-            'duration-500'
-        )
-        sectionKills.classList.remove('opacity-0',
-            'translate-y-5'
-        )
-    } else {
-        sectionKills.classList.remove('opacity-100',
-            'translate-y-0'
-        )
-        sectionKills.classList.add('opacity-0',
-            'translate-y-5',
-            'transition-all',
-            'duration-500'
-        )
-    }
-})
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 1300) {
-        sectionSkillsItems.classList.add('opacity-100',
-            'translate-y-0',
-            'transition-all',
-            'duration-500'
-        )
-        sectionSkillsItems.classList.remove('opacity-0',
-            'translate-y-5'
-        )
-    } else {
-        sectionSkillsItems.classList.remove('opacity-100',
-            'translate-y-0'
-        )
-        sectionSkillsItems.classList.add('opacity-0',
-            'translate-y-5',
-            'transition-all',
-            'duration-500'
-        )
-    }
-})
-
-// Section Projects
-
 const sectionProjects = document.querySelector('[data-section-projects]')
+const sectionContactComponent = document.querySelector('[data-section-contact]')
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 1850) {
-        sectionProjects.classList.add('opacity-100',
-            'translate-y-0',
-            'transition-all',
-            'duration-500',
-        )
-        sectionProjects.classList.remove('opacity-0',
-            'translate-y-5'
-        )
-    } else {
-        sectionProjects.classList.remove('opacity-100',
-            'translate-y-0'
-        )
-        sectionProjects.classList.add('opacity-0',
-            'translate-y-5',
-            'transition-all',
-            'duration-500'
-        )
-    }
-})
+
+// Funcao responsável por detectar o elemento e a posicaoAtualScroll
+
+function animateOnScroll(element, scrollPositionTrigger) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > scrollPositionTrigger) {
+            element.classList.add('opacity-100', 'translate-y-0', 'transition-all', 'duration-500')
+            element.classList.remove('opacity-0', 'translate-y-5')
+        } else {
+            element.classList.remove('opacity-100', 'translate-y-0')
+            element.classList.add('opacity-0', 'translate-y-5', 'transition-all', 'duration-500')
+        }
+    })
+}
+
+// Função responsável para causar o efeito no header
+
+function animateHeader(scrollPositionTrigger) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > scrollPositionTrigger) {
+            headerComponent.classList.add(
+                'backdrop-blur-md',
+                'bg-black/30',
+                'border-b',
+                'border-white/10',
+                'shadow-md',
+                'transition-all',
+                'duration-300'
+            )
+        } else {
+            headerComponent.classList.remove(
+                'backdrop-blur-md',
+                'bg-black/30',
+                'border-b',
+                'border-white/10',
+                'shadow-md',
+                'transition-all',
+                'duration-300'
+            )
+        }
+    })
+}
+
+// Invocações das funções
+
+animateHeader(200)
+animateOnScroll(sectionAboutMe, 290)
+animateOnScroll(sectionKills, 1150)
+animateOnScroll(sectionSkillsItems, 1300)
+animateOnScroll(sectionProjects, 1850)
+animateOnScroll(sectionContactComponent, 3000)
