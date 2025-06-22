@@ -47,8 +47,40 @@
             }
         }
 
+        @keyframes animationLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes animationReturnedLeft {
+            0% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+        }
+
         .animacao-fadeIn {
             animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        .animacao-left {
+            animation: animationLeft 0.5s ease-out forwards;
+        }
+
+        .animacao-left-returned {
+            animation: animationReturnedLeft 0.5s ease-out forwards;
         }
 
         button {
@@ -63,7 +95,7 @@
     <header class="fixed top-0 right-0 left-0 z-40" id="header" data-header>
         <div class="border-b border-slate-700">
             <div class="flex justify-between items-center max-w-7xl mx-auto py-5 px-28">
-                <h1 class="text-blue-400 text-2xl font-medium tracking-normal">devfenrir</h1>
+                <h1 class="text-blue-400 text-2xl font-medium tracking-normal">DevFenrir</h1>
                 <nav class="flex gap-8">
                     <a class="nav-link text-slate-400 hover:text-white transition duration-200" href="#secao-principal">home</a>
                     <a class="nav-link text-slate-400 hover:text-white transition duration-200" href="#section-about-me">about</a>
@@ -90,12 +122,12 @@
                     experiência sólida em Java, Python, HTML/CSS/Javascript, entre outras tecnologias.</p>
                 <div class="flex items-center gap-8 pt-8">
                     <div
-                        class="flex items-center bg-sky-700 p-3 pl-8 pr-5 gap-3 rounded-lg hover:bg-sky-600 transition-colors duration-300">
+                        class="flex items-center bg-sky-700 p-3 pl-8 pr-5 gap-3 rounded-lg hover:bg-sky-600 transition-colors duration-300 font-sans">
                         <a class="text-white" href="#section-projetos">Ver trabalhos</a>
                         <img src="/assets/arrow-icon.svg" alt="Icone de uma seta">
                     </div>
                     <div
-                        class="border border-slate-300 p-3 pl-8 pr-5 rounded-lg hover:bg-white hover:text-neutral-800 hover:font-semibold transition-colors duration-300">
+                        class="border border-slate-300 p-3 pl-8 pr-5 rounded-lg hover:bg-white hover:text-neutral-800 hover:font-semibold transition-colors duration-300 font-sans">
                         <a href="/assets/curriculum/felipedasilvacampagnol.cv.pdf" download>Download CV</a>
                     </div>
                 </div>
@@ -149,7 +181,7 @@
                     class="w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
                     <div class="flex items-center gap-4 pl-5 pt-5">
                         <img class="w-11" src="/assets/front-end.svg" alt="icone indicando a área front-end">
-                        <h3 class="text-neutral-200 font-medium text-xl">Front-end</h3>
+                        <h3 class="text-neutral-200 font-medium text-xl font-sans">Front-end</h3>
                     </div>
                     <div class="pl-5 pt-5 flex flex-col gap-2">
                         <p class="text-neutral-200 font-thin text-lg">Html e Css</p>
@@ -162,7 +194,7 @@
                     class="w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
                     <div class="flex items-center gap-4 pl-5 pt-5">
                         <img class="w-7" src="/assets/back-end.svg" alt="icone indicando a área back-end">
-                        <h3 class="text-neutral-200 font-medium text-xl">Back-end</h3>
+                        <h3 class="text-neutral-200 font-medium text-xl font-sans">Back-end</h3>
                     </div>
                     <div class="pl-5 pt-6 flex flex-col gap-2">
                         <p class="text-neutral-200 font-thin text-lg">Java</p>
@@ -173,7 +205,7 @@
                     class="w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
                     <div class="flex items-center gap-4 pl-5 pt-5">
                         <img class="w-9" src="/assets/database.svg" alt="icone indicando a área de banco de dados">
-                        <h3 class="text-neutral-200 font-medium text-xl">Data Base</h3>
+                        <h3 class="text-neutral-200 font-medium text-xl font-sans">Data Base</h3>
                     </div>
                     <div class="pl-5 pt-6 flex flex-col gap-2">
                         <p class="text-neutral-200 font-thin text-lg">Oracle SQL Developer Data Modeler</p>
@@ -185,7 +217,7 @@
                     <div class="flex items-center gap-4 pl-5 pt-5">
                         <img class="w-9" src="/assets/tools.svg"
                             alt="icone de ferramenta indicando a área de ferramentas">
-                        <h3 class="text-neutral-200 font-medium text-xl">Tools</h3>
+                        <h3 class="text-neutral-200 font-medium text-xl font-sans">Tools</h3>
                     </div>
                     <div class="pl-5 pt-6 flex flex-col gap-2">
                         <p class="text-neutral-200 font-thin text-lg">Figma</p>
@@ -205,9 +237,9 @@
                     class="w-250 min-h-50 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
                     <div class="flex justify-between pl-5 pr-6 pt-4">
                         <div class="flex items-center">
-                            <h3 class="text-neutral-200 text-2xl">EconoMy App</h3>
+                            <h3 class="text-neutral-200 text-3xl">EconoMy App</h3>
                             <span
-                                class="ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-500 shadow-lg shadow-blue-500/30">Back-end</span>
+                                class="ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-500 shadow-lg shadow-blue-500/30 font-sans">Back-end</span>
                         </div>
                         <div class="flex gap-3">
                             <a target="_blank" href="https://github.com/devfenrir/econoMy.app"><img class="w-8 hover:bg-sky-600/20 transition-colors duration-300 rounded"
@@ -217,7 +249,7 @@
                         </div>
                     </div>
                     <div class="pl-5 pr-6 pt-9">
-                        <p class="text-neutral-300 text-light">EconoMy é um software desenvolvido em Java, projetado
+                        <p class="text-neutral-300 text-light font-sans">EconoMy é um software desenvolvido em Java, projetado
                             para simular uma conta bancária. Seu principal objetivo é oferecer ao usuário uma
                             experiência segura e prática para realizar transferências e receber valores, funcionando
                             como uma ferramenta de apoio financeiro.</p>
@@ -227,9 +259,9 @@
                     class="w-250 min-h-50 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
                     <div class="flex justify-between pl-5 pr-6 pt-4">
                         <div class="flex items-center">
-                            <h3 class="text-neutral-200 text-2xl">Fyvo Fintech</h3>
+                            <h3 class="text-neutral-200 text-3xl">Fyvo Fintech</h3>
                             <span
-                                class="ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-500 shadow-lg shadow-blue-500/30">Front-end</span>
+                                class="ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-500 shadow-lg shadow-blue-500/30 font-sans">Front-end</span>
                         </div>
                         <div class="flex gap-3">
                             <a target="_blank" href="https://github.com/devfenrir/fyvofintech"><img class="w-8 hover:bg-sky-600/20 transition-colors duration-300 rounded"
@@ -239,7 +271,7 @@
                         </div>
                     </div>
                     <div class="pl-5 pr-6 pt-9">
-                        <p class="text-neutral-300 text-light">Fyvo é uma fintech brasileira criada com o objetivo de
+                        <p class="text-neutral-300 text-light font-sans">Fyvo é uma fintech brasileira criada com o objetivo de
                             ajudar as pessoas a organizar, acompanhar e melhorar o controle das suas finanças pessoais.
                             Através de ferramentas simples e intuitivas, o projeto oferece apoio na administração de
                             gastos, planejamento financeiro e construção de hábitos mais saudáveis com o dinheiro.</p>
@@ -249,9 +281,9 @@
                     class="w-250 min-h-50 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
                     <div class="flex justify-between pl-5 pr-6 pt-4">
                         <div class="flex items-center">
-                            <h3 class="text-neutral-200 text-2xl">Cadastro de Usuário em persistência</h3>
+                            <h3 class="text-neutral-200 text-3xl">Cadastro de Usuário em persistência</h3>
                             <span
-                                class="ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-500 shadow-lg shadow-blue-500/30">Back-end</span>
+                                class="ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-500 shadow-lg shadow-blue-500/30 font-sans">Back-end</span>
                         </div>
                         <div class="flex gap-3">
                             <a target="_blank" href="https://github.com/devfenrir/cadastro_python"><img class="w-8 hover:bg-sky-600/20 transition-colors duration-300 rounded"
@@ -261,7 +293,7 @@
                         </div>
                     </div>
                     <div class="pl-5 pr-6 pt-9">
-                        <p class="text-neutral-300 text-light">Este projeto é um sistema simples de cadastro de
+                        <p class="text-neutral-300 text-light font-sans">Este projeto é um sistema simples de cadastro de
                             usuários, desenvolvido em Python puro. A persistência dos dados é feita utilizando o módulo
                             JSON, garantindo o armazenamento e recuperação das informações de forma prática e eficiente.
                         </p>
@@ -279,11 +311,11 @@
                 discutirmos seu próximo projeto.</p>
             <div class="flex justify-center items-center gap-6 pt-4">
                 <button
-                    class="flex items-center bg-sky-600 p-3 pl-4 pr-5 gap-3 rounded text-neutral-200 hover:bg-sky-700 hover:border-sky-300"
+                    class="flex items-center bg-sky-600 p-3 pl-4 pr-5 gap-3 rounded text-neutral-200 hover:bg-sky-700 hover:border-sky-300 font-sans"
                     data-button-send-email><img class="w-7" src="/assets/email-branco.svg"
                         alt="ícone de envelope indicando o email">Enviar um
                     email</button>
-                <a class="flex items-center border border-white p-3 pl-4 pr-5 gap-3 rounded text-neutral-200 hover:bg-black hover:border-gray-900 transition-colors duration-300"
+                <a class="flex items-center border border-white p-3 pl-4 pr-5 gap-3 rounded text-neutral-200 hover:bg-black hover:border-gray-900 transition-colors duration-300 font-sans"
                     target="_blank" href="https://www.linkedin.com/in/felipescampagnol"><img class="w-7"
                         src="/assets/linkedin-branco.svg" alt="ícone da rede social linkedin">Contato via Linkedin</a>
             </div>
@@ -291,26 +323,31 @@
 
         <!-- Secao Modal Email -->
         <section class="fixed inset-0 bg-black/80 z-40 invisible" data-section-overlay>
-            <div class="fixed left-[650px] top-[330px] w-[590px] h-[260px] bg-slate-950 border border-slate-700 rounded"
+            <div class="fixed left-[650px] top-[330px] w-[578px] h-[260px] bg-slate-900/70 border border-slate-700 rounded"
                 data-janela-modal>
-                <h3 class="text-neutral-300 text-2xl text-center mt-4">Digite a sua mensagem</h3>
+                <h3 class="text-neutral-300 text-2xl text-center font-sans mt-4">Digite a sua mensagem</h3>
                 <form class="">
                     <div class="flex flex-col items-center mt-5">
-                        <label class="pb-2 text-neutral-200" for="mensagem">Mensagem</label>
-                        <textarea placeholder="Escreva sua mensagem ..."
+                        <label class="pb-2 text-neutral-200 font-sans" for="mensagem">Mensagem</label>
+                        <textarea placeholder="Digite seu texto aqui..."
                             class="w-130 h-20 border border-white/50 rounded p-2 text-neutral-200 bg-slate-900 resize-none"
                             id="mensagem"></textarea>
                         <div class="flex justify-between gap-20 pt-5">
                             <button
-                                class="pt-2 pr-8 pl-8 pb-2 bg-white rounded hover:bg-slate-500 border hover:border-slate-300 transition duration-300"
+                                class="pt-2 pr-8 pl-8 pb-2 bg-white rounded hover:bg-slate-500 border hover:border-slate-300 transition duration-300 font-sans font-semibold"
                                 data-section-closed>Fechar</button>
                             <button
-                                class="pt-2 pr-8 pl-8 pb-2 bg-sky-600 rounded hover:bg-sky-400 transition duration-300">Enviar</button>
+                                class="pt-2 pr-8 pl-8 pb-2 bg-sky-600 rounded hover:bg-sky-400 transition duration-300 font-sans font-semibold">Enviar</button>
                         </div>
                     </div>
                 </form>
             </div>
         </section>
+
+        <!-- Whatsapp Fixo -->
+         <section class="fixed top-[800px] left-[32px] p-5 w-22 h-22 bg-sky-800/40 rounded-bl-2xl rounded-[100px] invisible" data-section-whatsapp>
+                <a href=""><img class="min-w-12" src="/assets/whatsapp.svg" alt="ícone de telefone indicando o whatsapp"></a>
+         </section>
 
         <!-- Rodapé -->
         <footer class="mt-20">
@@ -319,6 +356,7 @@
             </div>
         </footer>
     </main>
+    <script src="/js/whatsapp.js"></script>
     <script src="/js/scroll.js"></script>
     <script src="/js/modalContact.js"></script>
 </body>
