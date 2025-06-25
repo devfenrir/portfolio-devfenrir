@@ -52,7 +52,7 @@ function animateHeader(scrollPositionTrigger) {
 
 // Invocações das funções
 
-animateHeader(200)
+animateHeader(30)
 animateOnScroll(sectionAboutMe, 290)
 animateOnScroll(sectionKills, 1150)
 animateOnScroll(sectionSkillsItems, 1300)
