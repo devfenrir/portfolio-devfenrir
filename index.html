@@ -95,18 +95,18 @@
     <header class="fixed top-0 right-0 left-0 z-40" id="header" data-header>
         <div class="border-b border-slate-700">
             <div
-                class="flex justify-between items-center max-w-7xl mx-auto 2xl:py-1 px-28 xl:py-5 lg:py-5 md:py-5 sm:py-2">
-                <h1 class="text-blue-400 text-2xl font-medium tracking-normal sm:text-lg">DevFenrir</h1>
+                class="flex justify-between items-center max-w-7xl mx-auto py-3 2xl:py-1 px-28 md:py-5 lg:py-2 sm:py-2">
+                <h1 class="text-blue-400 text-2xl font-medium tracking-normal md:text-2xl">DevFenrir</h1>
                 <nav class="flex gap-8">
-                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible sm:invisible"
+                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
                         href="#secao-principal">home</a>
-                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible sm:invisible"
+                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
                         href="#section-about-me">about</a>
-                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible sm:invisible"
+                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
                         href="#section-habilidades">skills</a>
-                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible sm:invisible"
+                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
                         href="#section-projetos">projects</a>
-                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible sm:invisible"
+                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
                         href="#section-contatos">contact</a>
                 </nav>
             </div>
@@ -117,44 +117,41 @@
 
         <!-- Seção Principal -->
         <section class="text-slate-400" id="secao-principal">
-            <div class="flex flex-col items-center mt-50 gap-4">
-                <h2 class="
-                2xl:text-9xl tracking-tight text-white xl:text-9xl
-                lg:text-8xl
-                md:text-8xl
-                sm:text-6xl">Dev<strong class="text-blue-400">Fenrir</strong></h2>
+            <div class="flex flex-col items-center mt-50 gap-4 pt-10">
+                <h2 class="text-6xl md:text-8xl text-white">Dev<strong class="text-blue-400">Fenrir</strong></h2>
                 <div class="flex items-center gap-4">
                     <span class="bg-sky-600 w-7 h-1 block bg-linear-to-l from-blue-400 to-blue-700"></span>
-                    <p class="text-3xl text-neutral-200 sm:text-2xl">Full Stack Developer</p>
+                    <p class="text-2xl md:text-3xl text-neutral-200">Full Stack Developer</p>
                     <span class="bg-sky-600 w-7 h-1 block bg-linear-to-l from-blue-400 to-blue-700"></span>
                 </div>
-                <p class="text-xl 2xl:w-4xl 2xl:text-2xl text-center p-3 xl:w-4xl lg:w-3xl md:w-2xl sm:text-lg sm:w-lg">
+                <p
+                    class="text-sm md:text-lg 2xl:w-4xl lg:text-2xl text-center p-3 xl:w-4xl lg:w-3xl md:w-2xl sm:text-lg sm:w-lg">
                     Desenvolvedor Full
                     Stack com
                     foco em
                     soluções escaláveis e
                     experiência sólida em Java, Python, HTML/CSS/Javascript, entre outras tecnologias.</p>
-                <div class="flex items-center gap-8 pt-8">
+                <div class="flex items-center flex-col gap-4 pt-2 sm:flex-row sm:gap-8 sm:pt-8">
                     <div
-                        class="flex items-center bg-sky-700 p-3 pl-8 pr-5 gap-3 rounded-lg hover:bg-sky-600 transition-colors duration-300 font-sans">
+                        class="flex items-center bg-sky-700 p-3 pl-12 pr-12 sm:pl-8 sm:pr-8 gap-3 rounded-lg hover:bg-sky-600 transition-colors duration-300 font-sans">
                         <a class="text-white" href="#section-projetos">Ver trabalhos</a>
                         <img src="/assets/arrow-icon.svg" alt="Icone de uma seta">
                     </div>
                     <div
-                        class="border border-slate-300 p-3 pl-8 pr-5 rounded-lg hover:bg-white hover:text-neutral-800 hover:font-semibold transition-colors duration-300 font-sans">
+                        class="border border-slate-300 p-3 pl-15 pr-15 sm:pl-8 sm:pr-8 rounded-lg hover:bg-white hover:text-neutral-800 hover:font-semibold transition-colors duration-300 font-sans">
                         <a href="/assets/curriculum/felipedasilvacampagnol.cv.pdf" download>Download CV</a>
                     </div>
                 </div>
                 <div class="flex gap-4 pt-10">
                     <a target="_blank" class="hover:bg-sky-600/20 transition-colors duration-300 p-2 rounded"
-                        href="mailto:felipe.devsoftwareengineer@gmail.com"><img src="/assets/email-icon.svg"
-                            alt="ícone de um envelope indicando o email"></a>
+                        href="mailto:felipe.devsoftwareengineer@gmail.com"><img class="w-6 sm:w-8"
+                            src="/assets/email-icon.svg" alt="ícone de um envelope indicando o email"></a>
                     <a target="_blank" class="hover:bg-sky-600/20 transition-colors duration-300 p-2 rounded"
-                        href="https://github.com/devfenrir"><img src="/assets/github-icon.svg"
+                        href="https://github.com/devfenrir"><img class="w-6 sm:w-8" src="/assets/github-icon.svg"
                             alt="ícone de um gato polvo indicando o github"></a>
                     <a target="_blank" class="hover:bg-sky-600/20 transition-colors duration-300 p-2 rounded"
-                        href="https://www.linkedin.com/in/felipescampagnol"><img src="/assets/linkedin-icon.svg"
-                            alt="ícone da rede social linkedin"></a>
+                        href="https://www.linkedin.com/in/felipescampagnol"><img class="w-6 sm:w-8"
+                            src="/assets/linkedin-icon.svg" alt="ícone da rede social linkedin"></a>
                 </div>
             </div>
         </section>
@@ -164,11 +161,11 @@
             class="opacity-100 translate-y-0 transition-opacity transition-transform duration-500 border-t border-slate-900 mt-52"
             id="section-about-me" data-section-about-me>
             <div class="mt-30">
-                <h2 class="text-neutral-200 text-center md:text-5xl sm:text-4xl sm:mb-10">About me</h2>
-                <div class="flex items-center gap-20 justify-center sm:flex-col-reverse md:flex-row">
+                <h2 class="text-neutral-200 text-center text-3xl pb-10 md:text-5xl sm:text-4xl sm:mb-10">About me</h2>
+                <div class="flex items-center gap-20 justify-center flex-col-reverse md:flex-row">
                     <div class="md:w-220 sm:w-140 flex flex-col gap-8">
                         <p
-                            class="text-slate-400 2xl:text-xl xl:text-lg xl:pl-7 sm:text-center md:text-start sm:text-lg">
+                            class="text-slate-400 2xl:text-xl xl:text-lg xl:pl-7 sm:text-center md:text-start text-[16px] text-center pr-5 pl-5">
                             Me chamo
                             Felipe, sou um desenvolvedor
                             Full
@@ -178,7 +175,7 @@
                             apaixonado por criar aplicações
                             modernas, performáticas e com foco em experiência do usuário.</p>
                         <p
-                            class="text-slate-400 2xl:text-xl xl:text-lg xl:pl-7 sm:text-center md:text-start sm:text-lg">
+                            class="text-slate-400 2xl:text-xl xl:text-lg xl:pl-7 sm:text-center md:text-start text-[16px] text-center pr-5 pl-5">
                             Tenho
                             conhecimento em tecnologias como
                             HTML, CSS,
@@ -187,7 +184,7 @@
                             Python e Java, com aprendizado contínuo em frameworks e boas práticas de desenvolvimento.
                         </p>
                         <p
-                            class="text-slate-400 2xl:text-xl xl:text-lg xl:pl-7 sm:text-center md:text-start sm:text-lg">
+                            class="text-slate-400 2xl:text-xl xl:text-lg xl:pl-7 md:text-start text-[16px] text-center pr-5 pl-5">
                             Busco
                             sempre escrever código limpo,
                             escalável e com
@@ -196,7 +193,7 @@
                             usabilidade.</p>
                     </div>
                     <div class="sm:pl-0 md:pl-5">
-                        <img class="2xl:w-120 shadow-xl shadow-blue-500/3 xl:w-120 lg:w-120 md:w-200 md:pt-22 sm:w-60"
+                        <img class="2xl:w-120 shadow-xl shadow-blue-500/3 xl:w-120 lg:w-120 md:w-200 md:pt-22 sm:w-60 w-55"
                             src="/assets/fenrir.png"
                             alt="imagem de um lobo fazendo referência ao fenrir, lobo mitológico nórdico">
                     </div>
@@ -208,11 +205,11 @@
         <section
             class="opacity-100 translate-y-0 transition-opacity transition-transform duration-500 border-t border-slate-900 mt-28"
             id="section-habilidades" data-section-skills>
-            <h2 class="text-neutral-200 text-center md:mt-29 sm:mt-20 md:text-5xl sm:text-4xl sm:mb-10">Skills</h2>
+            <h2 class="text-neutral-200 text-center text-3xl pb-10 md:text-5xl sm:text-4xl sm:mb-10 pt-20">Skills</h2>
             <div class="opacity-100 translate-y-0 transition-opacity transition-transform duration-500 flex flex-wrap justify-center gap-10 mt-24"
                 data-section-skills-items>
                 <div
-                    class="w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
+                    class="w-66 sm:w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
                     <div class="flex items-center gap-4 pl-5 pt-5">
                         <img class="w-11" src="/assets/front-end.svg" alt="icone indicando a área front-end">
                         <h3 class="text-neutral-200 font-medium text-xl font-sans">Front-end</h3>
@@ -225,7 +222,7 @@
                     </div>
                 </div>
                 <div
-                    class="w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
+                    class="w-66 sm:w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
                     <div class="flex items-center gap-4 pl-5 pt-5">
                         <img class="w-11" src="/assets/back-end.svg" alt="icone indicando a área back-end">
                         <h3 class="text-neutral-200 font-medium text-xl font-sans">Back-end</h3>
@@ -236,7 +233,7 @@
                     </div>
                 </div>
                 <div
-                    class="w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
+                    class="w-66 sm:w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
                     <div class="flex items-center gap-4 pl-5 pt-5">
                         <img class="w-9" src="/assets/database.svg" alt="icone indicando a área de banco de dados">
                         <h3 class="text-neutral-200 font-medium text-xl font-sans">Data Base</h3>
@@ -247,7 +244,7 @@
                     </div>
                 </div>
                 <div
-                    class="w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
+                    class="w-66 sm:w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
                     <div class="flex items-center gap-4 pl-5 pt-5">
                         <img class="w-9" src="/assets/tools.svg"
                             alt="icone de ferramenta indicando a área de ferramentas">
@@ -266,15 +263,16 @@
         <section
             class="opacity-100 translate-y-0 transition-opacity transition-transform border-t border-slate-900 mt-64 pb-32"
             id="section-projetos" data-section-projects>
-            <h2 class="text-neutral-200 text-center md:mt-29 sm:mt-20 md:text-5xl sm:text-4xl sm:mb-10">My Projects</h2>
+            <h2 class="text-neutral-200 text-center text-3xl pb-10 md:text-5xl sm:text-4xl sm:mb-10 pt-20">My Projects
+            </h2>
             <div class="mt-24 grid justify-center gap-12">
                 <div
-                    class="2xl:w-250 min-h-50 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300 xl:w-250 lg:w-220 md:w-180 sm:w-145">
+                    class="2xl:w-250 w-68 min-h-50 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300 xl:w-250 lg:w-220 md:w-180 sm:w-145">
                     <div class="flex justify-between pl-5 pr-6 pt-4">
                         <div class="flex items-center">
-                            <h3 class="sm:text-2xl text-neutral-200 md:text-3xl">EconoMy App</h3>
+                            <h3 class="text-lg sm:text-2xl text-neutral-200 md:text-3xl">EconoMy App</h3>
                             <span
-                                class="ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-500 shadow-lg shadow-blue-500/30 font-sans">Back-end</span>
+                                class="invisible sm:visible ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-500 shadow-lg shadow-blue-500/30 font-sans">Back-end</span>
                         </div>
                         <div class="flex gap-3">
                             <a target="_blank" href="https://github.com/devfenrir/econoMy.app"><img
@@ -285,7 +283,8 @@
                         </div>
                     </div>
                     <div class="pl-5 pr-6 pt-9">
-                        <p class="text-neutral-300 text-light font-sans sm:text-sm sm:pb-4 md:pb-2 md:text-md">EconoMy é
+                        <p class="text-neutral-300 text-light font-sans sm:text-sm pb-7 sm:pb-4 md:pb-2 md:text-md">
+                            EconoMy é
                             um software desenvolvido em Java,
                             projetado
                             para simular uma conta bancária. Seu principal objetivo é oferecer ao usuário uma
@@ -294,12 +293,12 @@
                     </div>
                 </div>
                 <div
-                    class="2xl:w-250 min-h-50 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300 xl:w-250 lg:w-220 md:w-180 sm:w-145">
+                    class="w-68 min-h-50 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300 xl:w-250 lg:w-220 md:w-180 sm:w-145">
                     <div class="flex justify-between pl-5 pr-6 pt-4">
                         <div class="flex items-center">
-                            <h3 class="sm:text-2xl text-neutral-200 md:text-3xl">Fyvo Fintech</h3>
+                            <h3 class="text-lg sm:text-2xl text-neutral-200 md:text-3xl">Fyvo Fintech</h3>
                             <span
-                                class="ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-500 shadow-lg shadow-blue-500/30 font-sans">Front-end</span>
+                                class="invisible sm:visible ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-500 shadow-lg shadow-blue-500/30 font-sans">Front-end</span>
                         </div>
                         <div class="flex gap-3">
                             <a target="_blank" href="https://github.com/devfenrir/fyvofintech"><img
@@ -310,7 +309,8 @@
                         </div>
                     </div>
                     <div class="pl-5 pr-6 pt-9">
-                        <p class="text-neutral-300 text-light font-sans sm:text-sm sm:pb-4 md:pb-2 md:text-md">Fyvo é
+                        <p class="text-neutral-300 text-light font-sans sm:text-sm pb-7 sm:pb-4 md:pb-2 md:text-md">Fyvo
+                            é
                             uma fintech brasileira
                             criada com o
                             objetivo de
@@ -320,24 +320,24 @@
                     </div>
                 </div>
                 <div
-                    class="2xl:w-250 min-h-50 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300 xl:w-250 lg:w-220 md:w-180 sm:w-145">
+                    class="2xl:w-250 w-68 min-h-50 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300 xl:w-250 lg:w-220 md:w-180 sm:w-145">
                     <div class="flex justify-between pl-5 pr-6 pt-4">
                         <div class="flex items-center">
-                            <h3 class="sm:text-2xl text-neutral-200 md:text-3xl">Cadastro de Usuário
+                            <h3 class="text-lg sm:text-2xl text-neutral-200 md:text-3xl">Cadastro de Usuário
                             </h3>
                             <span
-                                class="ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-500 shadow-lg shadow-blue-500/30 font-sans">Back-end</span>
+                                class="invisible sm:visible ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-500 shadow-lg shadow-blue-500/30 font-sans">Back-end</span>
                         </div>
                         <div class="flex gap-3">
                             <a target="_blank" href="https://github.com/devfenrir/cadastro_python"><img
-                                    class="w-8 hover:bg-sky-600/20 transition-colors duration-300 rounded"
+                                    class="w-12 sm:w-8 hover:bg-sky-600/20 transition-colors duration-300 rounded"
                                     src="/assets/github-icon.svg" alt="ícone indicando o github"></a>
-                            <a href=""><img class="w-8 hover:bg-sky-600/20 transition-colors duration-300 rounded"
+                            <a href=""><img class="w-12 sm:w-8 hover:bg-sky-600/20 transition-colors duration-300 rounded"
                                     src="/assets/gridicons_external.svg" alt="ícone indicando link externo"></a>
                         </div>
                     </div>
                     <div class="pl-5 pr-6 pt-9">
-                        <p class="text-neutral-300 text-light font-sans sm:text-sm sm:pb-4 md:pb-2 md:text-md">Este
+                        <p class="text-neutral-300 text-light font-sans sm:text-sm pb-7 sm:pb-4 md:pb-2 md:text-md">Este
                             projeto é um sistema simples
                             de cadastro
                             de
@@ -351,7 +351,7 @@
 
         <!-- Seção Contact -->
         <section class="border-t border-slate-900 mt-34" id="section-contatos" data-section-contact>
-            <h2 class="text-neutral-200 text-center md:mt-29 sm:mt-20 md:text-5xl sm:text-4xl sm:mb-10">Contact</h2>
+            <h2 class="text-neutral-200 text-center text-3xl pb-6 md:text-5xl sm:text-4xl sm:mb-10 pt-20">Contact</h2>
             <p class="text-neutral-400 text-light text-center p-6 text-lg md:text-xl">Interessado(a) em trabalhar
                 juntos?
                 Entre em
@@ -374,7 +374,7 @@
 
         <!-- Secao Modal Email -->
         <section class="invisible fixed inset-0 bg-black/80 z-40" data-section-overlay>
-            <div class="fixed left-[100px] top-[330px] right-[240px] w-[440px] h-[260px] bg-slate-900/70 border border-slate-700 rounded"
+            <div class="fixed left-[10px] top-[320px] right-[56px] w-[300px] h-[260px] bg-slate-900/70 border border-slate-700 rounded sm:left-[101px] sm:w-[450px] md:left-[176px] lg:left-[300px] xl:left-[440px] 2xl:left-[680px]"
                 data-janela-modal>
                 <h3 class="text-neutral-300 text-2xl text-center font-sans mt-4">Digite a sua
                     mensagem</h3>
@@ -382,9 +382,9 @@
                     <div class="flex flex-col items-center mt-5">
                         <label class="pb-2 text-neutral-200 font-sans" for="mensagem">Mensagem</label>
                         <textarea placeholder="Digite seu texto aqui..."
-                            class="w-100 h-20 border border-white/50 rounded p-2 text-neutral-200 bg-slate-900 resize-none"
+                            class="w-65 h-20 border border-white/50 rounded p-2 text-neutral-200 bg-slate-900 resize-none sm:w-100"
                             id="mensagem"></textarea>
-                        <div class="flex justify-between gap-20 pt-5">
+                        <div class="flex justify-between gap-10 pt-5">
                             <button
                                 class="
                                 pt-2 pr-8 pl-8 pb-2 bg-white rounded hover:bg-slate-500 border hover:border-slate-300 transition duration-300 font-sans font-semibold"
