@@ -82,5 +82,5 @@ document.addEventListener('DOMContentLoaded', () => {
     animacaoLado(sectionProjectOne, 2050)
     animacaoLado(sectionProjectTwo, 2070)
     animacaoLado(sectionProjectThree, 1690)
-    animateOnScroll(sectionContactComponent, 3000)
+    animateOnScroll(sectionContactComponent, 3300)
 })
