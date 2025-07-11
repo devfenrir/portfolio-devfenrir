@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerItemThree = document.querySelector('[data-items-item-3]')
     const headerItemFour = document.querySelector('[data-items-item-4]')
     const headerItemFive = document.querySelector('[data-items-item-5]')
+    const headerItemSix = document.querySelector('[data-items-item-6]')
 
     const sectionAboutMe = document.querySelector('[data-section-about-me]')
     const sectionDescricaoAbout = document.querySelector('[data-section-descricao-about-me]')
@@ -72,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 headerItemThree.classList.add('text-slate-500', 'transition-all')
                 headerItemFour.classList.add('text-slate-500', 'transition-all')
                 headerItemFive.classList.add('text-slate-500', 'transition-all')
+                headerItemSix.classList.add('text-slate-500', 'transition-all')
             } else {
                 headerItemOne.classList.remove('text-slate-500', 'transition-all')
                 headerItemTwo.classList.remove('text-slate-500', 'transition-all')
