@@ -38,20 +38,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     'backdrop-blur-md',
                     'bg-black/30',
                     'border-b',
-                    'border-white/10',
                     'shadow-md',
                     'transition-all',
-                    'duration-300'
+                    'duration-300',
                 )
             } else {
                 headerComponent.classList.remove(
                     'backdrop-blur-md',
                     'bg-black/30',
                     'border-b',
-                    'border-white/10',
                     'shadow-md',
                     'transition-all',
-                    'duration-300'
+                    'duration-300',
                 )
             }
         })
