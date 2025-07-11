@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Função responsável para causar o efeito dos itens das skills
 
-    function animacaoLado(scrollPositionTrigger) {
+    function animacaoLado(element, scrollPositionTrigger) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > scrollPositionTrigger) {
                 element.classList.add('opacity-100', 'translate-y-0', 'transition-all', 'duration-700', 'ease-in-out', 'animacaoCards')
@@ -98,8 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Invocações das funções
 
-    animateHeader(30)
-    animateHeaderItems(30)
+    animateHeader(50)
+    animateHeaderItems(50)
     animateOnScroll(sectionAboutMe, 290)
     animacaoLado(sectionDescricaoAbout, 500)
     animateOnScroll(sectionKills, 1150)
