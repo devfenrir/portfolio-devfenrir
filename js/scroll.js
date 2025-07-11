@@ -3,6 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Variaveis Gerais para interação com scroll 
 
     const headerComponent = document.querySelector('[data-header]')
+
+    const headerItemOne = document.querySelector('[data-items-item-1]')
+    const headerItemTwo = document.querySelector('[data-items-item-2]')
+    const headerItemThree = document.querySelector('[data-items-item-3]')
+    const headerItemFour = document.querySelector('[data-items-item-4]')
+    const headerItemFive = document.querySelector('[data-items-item-5]')
+
     const sectionAboutMe = document.querySelector('[data-section-about-me]')
     const sectionDescricaoAbout = document.querySelector('[data-section-descricao-about-me]')
     const sectionKills = document.querySelector('[data-section-skills]')
@@ -29,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    // Função responsável para causar o efeito no header
+    // Função responsável por causar o efeito no header 
 
     function animateHeader(scrollPositionTrigger) {
         window.addEventListener('scroll', () => {
@@ -55,9 +62,29 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    // Função responsável por causar o efeito nos itens do header
+
+    function animateHeaderItems(scrollPositionTrigger) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > scrollPositionTrigger) {
+                headerItemOne.classList.add('text-slate-500', 'transition-all')
+                headerItemTwo.classList.add('text-slate-500', 'transition-all')
+                headerItemThree.classList.add('text-slate-500', 'transition-all')
+                headerItemFour.classList.add('text-slate-500', 'transition-all')
+                headerItemFive.classList.add('text-slate-500', 'transition-all')
+            } else {
+                headerItemOne.classList.remove('text-slate-500', 'transition-all')
+                headerItemTwo.classList.remove('text-slate-500', 'transition-all')
+                headerItemThree.classList.remove('text-slate-500', 'transition-all')
+                headerItemFour.classList.remove('text-slate-500', 'transition-all')
+                headerItemFive.classList.remove('text-slate-500', 'transition-all')
+            }
+        })
+    }
+
     // Função responsável para causar o efeito dos itens das skills
 
-    function animacaoLado(element, scrollPositionTrigger) {
+    function animacaoLado(scrollPositionTrigger) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > scrollPositionTrigger) {
                 element.classList.add('opacity-100', 'translate-y-0', 'transition-all', 'duration-700', 'ease-in-out', 'animacaoCards')
@@ -72,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Invocações das funções
 
     animateHeader(30)
+    animateHeaderItems(30)
     animateOnScroll(sectionAboutMe, 290)
     animacaoLado(sectionDescricaoAbout, 500)
     animateOnScroll(sectionKills, 1150)
