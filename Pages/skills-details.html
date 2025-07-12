@@ -1,1 +1,81 @@
-<!-- Em desenvolvimento -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFenrir | Detalhes | Skills</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* Estilos Locais do Hover Header */
+        .nav-link {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #1d4ed8;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Estilo de Gradient no Body */
+        .gradiente {
+            background: linear-gradient(135deg, #00040e, #000000, #000000, #000000, #000000, #000000, #000a20);
+        }
+    </style>
+</head>
+
+<body class="gradiente font-[Sora] min-h-screen">
+
+    <!-- Header -->
+    <header class="fixed top-0 right-0 left-0 z-40" id="header" data-header>
+        <div class="border-b border-slate-700">
+            <div class="flex justify-between items-center max-w-7xl mx-auto py-3 2xl:py-1 px-28 md:py-5 lg:py-2 sm:py-2"
+                data-itens-header>
+                <h1 class="text-blue-700 text-2xl font-medium tracking-normal md:text-2xl">DevFenrir</h1>
+                <nav class="flex gap-8">
+                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
+                        href="#secao-principal" data-items-item-1>home</a>
+                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
+                        href="#section-about-me" data-items-item-2>about</a>
+                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
+                        href="#section-habilidades" data-items-item-3>skills</a>
+                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
+                        href="#section-projetos" data-items-item-4>projects</a>
+                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
+                        href="#" data-items-item-5>certifications</a>
+                    <a class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
+                        href="#section-contatos" data-items-item-6>contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-[150px]">
+
+        <!-- Programação Web -->
+        <section>
+            <div class="flex items-center flex-col justify-center pb-5 gap-2">
+                <img class="w-[70px]" src="/assets/techweb.svg" alt="Logo de Html, Css e Javascript">
+                <h2 class="text-slate-400 flex justify-center text-2xl">Desenvolvimento Web
+                </h2>
+                <span class="block w-[250px] border-b border-gray-900"></span>
+                <p class="text-slate-500 text-center text-[14px] w-[290px]">Domínio de HTML, CSS, Bootstrap, Tailwind e com foco em responsividade, semântica e visual refinado. Conhecimento em JavaScript para interações e habilidade em criar interfaces modernas, acessíveis e bem organizadas.</p>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
