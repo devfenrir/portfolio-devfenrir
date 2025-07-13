@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const sectionProjectTwo = document.querySelector('[data-project-two]')
     const sectionProjectThree = document.querySelector('[data-project-three]')
 
-
     // Funcao responsável por detectar o elemento e a posicaoAtualScroll
 
     function animateOnScroll(element, scrollPositionTrigger) {

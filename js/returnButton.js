@@ -21,6 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    scrollReturn(componentReturn, 400);
+    scrollReturn(componentReturn, 100);
 
 })
