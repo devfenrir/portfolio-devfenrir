@@ -1,22 +1,26 @@
-const sendEmailButton = document.querySelector('[data-button-send-email]')
-const sectionOverlay = document.querySelector('[data-section-overlay]')
-const sectionClosedButton = document.querySelector('[data-section-closed]')
-const janelaModal = document.querySelector('[data-janela-modal]')
+document.addEventListener('DOMContentLoaded', () => {
 
-// Função abre modal
-const openModalEmail = (evento) => {
-    evento.preventDefault()
-    sectionOverlay.classList.remove('invisible')
-    janelaModal.classList.add('animacao-fadeIn')
-}
+    const sendEmailButton = document.querySelector('[data-button-send-email]')
+    const sectionOverlay = document.querySelector('[data-section-overlay]')
+    const sectionClosedButton = document.querySelector('[data-section-closed]')
+    const janelaModal = document.querySelector('[data-janela-modal]')
 
-// Função fecha modal
-const closeModalEmail = (evento) => {
-    evento.preventDefault()
-    sectionOverlay.classList.add('invisible')
-    janelaModal.classList.remove('animacao-fadeIn')
-}
+    // Função abre modal
+    const openModalEmail = (evento) => {
+        evento.preventDefault()
+        sectionOverlay.classList.remove('invisible')
+        janelaModal.classList.add('animacao-fadeIn')
+    }
 
-// Escutadores de evento que recebem funções 
-sendEmailButton.addEventListener('click', openModalEmail)
-sectionClosedButton.addEventListener('click', closeModalEmail)
+    // Função fecha modal
+    const closeModalEmail = (evento) => {
+        evento.preventDefault()
+        sectionOverlay.classList.add('invisible')
+        janelaModal.classList.remove('animacao-fadeIn')
+    }
+
+    // Escutadores de evento que recebem funções 
+    sendEmailButton.addEventListener('click', openModalEmail)
+    sectionClosedButton.addEventListener('click', closeModalEmail)
+
+})
