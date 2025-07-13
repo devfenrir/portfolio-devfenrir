@@ -1,1 +1,205 @@
-<!-- Em desenvolvimento -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFenrir | Certifications</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* Estilos Locais do Hover Header */
+        .nav-link {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #1d4ed8;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Estilo de Gradient no Body */
+        .gradiente {
+            background: linear-gradient(135deg, #00040e, #000000, #000000, #000000, #000000, #000000, #000a20);
+        }
+
+        /* Registro de Animação*/
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes animationLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes animationReturnedLeft {
+            0% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+        }
+
+        @keyframes animacaoCards {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+
+        .animacaoCards {
+            animation: animacaoCards 0.6s ease-out forwards;
+        }
+
+        .animacao-fadeIn {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        .animacao-left {
+            animation: animationLeft 0.5s ease-out forwards;
+        }
+
+        .animacao-left-returned {
+            animation: animationReturnedLeft 0.5s ease-out forwards;
+        }
+
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="gradiente font-[Sora] min-h-screen">
+
+    <!-- Header -->
+    <header class="fixed top-0 right-0 left-0 z-40" id="header" data-header>
+        <div class="border-b border-slate-700">
+            <div class="flex justify-between items-center max-w-7xl mx-auto py-3 2xl:py-1 px-28 md:py-5 lg:py-2 sm:py-2"
+                data-itens-header>
+                <h1 class="text-blue-700 text-2xl font-medium tracking-normal md:text-2xl 2xl:py-5 2xl:text-3xl">
+                    DevFenrir</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-[150px] 2xl:mt-[160px]">
+
+        <!-- Título e Linha inicial -->
+        <div class="flex flex-col items-center">
+            <h2 class="text-slate-400 pb-6 text-center text-[22.2px]">Certificados Profissionais</h2>
+            <span class="w-[283px] border-b border-gray-900"></span>
+        </div>
+
+        <!-- Certificados da linha 1-->
+        <section class="flex flex-col items-center pt-6">
+            <div
+                class="w-70 min-h-50 bg-slate-950 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300 p-4 mt-8">
+                <div class="flex flex-col items-center">
+                    <img class="w-80" src="/assets/comunicação-certificado.png"
+                        alt="certificado de comunicação pela universidade FIAP">
+                    <p class="text-slate-500 text-center text-[14px] w-65 pt-4">Durante o curso, compreendi que a
+                        comunicação eficaz é fundamental para ampliar horizontes e consolidar o crescimento
+                        profissional.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="w-70 min-h-50 bg-slate-950 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300 p-4 mt-8">
+                <div class="flex flex-col items-center">
+                    <img class="w-80" src="/assets/logica-de-programacao-certificacao.png"
+                        alt="certificado de lógica de programação pela universidade FIAP">
+                    <p class="text-slate-500 text-center text-[14px] w-65 pt-4">Neste curso, aprendi os fundamentos da
+                        lógica de programação utilizando Java e Python, compreendendo suas diferenças estruturais e boas
+                        práticas essenciais para o desenvolvimento de um código limpo e eficiente.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="w-70 min-h-50 bg-slate-950 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300 p-4 mt-8">
+                <div class="flex flex-col items-center">
+                    <img class="w-80" src="/assets/java-fundamentos-certificados.png"
+                        alt="certificado de fundamentos de java pela universidade FIAP">
+                    <p class="text-slate-500 text-center text-[14px] w-65 pt-4">Neste curso, aprendi os fundamentos da
+                        linguagem Java, abordando conceitos como variáveis, estruturas condicionais, laços de repetição,
+                        tratamento de exceções com try/catch, entre outros elementos essenciais da programação.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificados da linha 2-->
+        <section class="flex flex-col items-center pt-6">
+            <div
+                class="w-70 min-h-50 bg-slate-950 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300 p-4 mt-8">
+                <div class="flex flex-col items-center">
+                    <img class="w-80" src="/assets/html-e-css-certificacao.png"
+                        alt="certificado de html e css pela Alura">
+                    <p class="text-slate-500 text-center text-[14px] w-65 pt-4">Neste curso, aprendi os fundamentos de HTML e CSS, explorando a construção de páginas web estáticas com foco em uma estrutura semântica e uma estilização moderna, responsiva e visualmente atrativa.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="w-70 min-h-50 bg-slate-950 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300 p-4 mt-8">
+                <div class="flex flex-col items-center">
+                    <img class="w-80" src="/assets/tailwind-css-estilizando-sua-pagina-certificacao.png"
+                        alt="certificado de tailwind css pela Alura">
+                    <p class="text-slate-500 text-center text-[14px] w-65 pt-4">Neste curso, aprendi a desenvolver páginas utilizando Tailwind CSS, explorando o uso eficiente de classes utilitárias para criar interfaces modernas, responsivas e bem estruturadas.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="w-70 min-h-50 bg-slate-950 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300 p-4 mt-8">
+                <div class="flex flex-col items-center">
+                    <img class="w-80" src="/assets/python-primeira-aplicacao-certificacao.png"
+                        alt="certificado de desenvolvimento em python pela Alura">
+                    <p class="text-slate-500 text-center text-[14px] w-65 pt-4">Neste curso, desenvolvi minha primeira aplicação em Python: um sistema de cadastro de restaurantes, aplicando conceitos fundamentais da linguagem e lógica de programação.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="/js/headerEffect.js"></script>
+</body>
+
+</html>
