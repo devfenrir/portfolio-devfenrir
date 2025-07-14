@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 'font-bold',
                 'text-center',
                 'text-[16px]',
-                'pt-4'
+                'pt-4',
+                'animacao-fadeOff'
             )
 
             divMessagePersonalizada.appendChild(dontHaveMessage)
