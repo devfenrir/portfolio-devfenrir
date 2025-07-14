@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'text-slate-500',
                 'font-bold',
                 'text-center',
-                'text-[20px]',
+                'text-[16px]',
                 'pt-4'
             )
 
