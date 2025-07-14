@@ -1,20 +1,23 @@
-const botaoVerMaisCertificados = document.querySelector('[data-button-mais-detalhes-certificados]')
+document.addEventListener('DOMContentLoaded', () => {
 
-botaoVerMaisCertificados.addEventListener('click', () => {
-    const divMessagePersonalizada = document.querySelector('[data-dont-have-message]')
+    const botaoVerMaisCertificados = document.querySelector('[data-button-mais-detalhes-certificados]')
 
-    if (divMessagePersonalizada.children.length === 0) {
-        const dontHaveMessage = document.createElement('p')
-        dontHaveMessage.innerText = 'Não há mais certificados até o momento'
+    botaoVerMaisCertificados.addEventListener('click', () => {
+        const divMessagePersonalizada = document.querySelector('[data-dont-have-message]')
 
-        dontHaveMessage.classList.add(
-            'text-slate-500',
-            'font-bold',
-            'text-center',
-            'text-[20px]',
-            'pt-4'
-        )
+        if (divMessagePersonalizada.children.length === 0) {
+            const dontHaveMessage = document.createElement('p')
+            dontHaveMessage.innerText = 'Não há mais certificados até o momento'
 
-        divMessagePersonalizada.appendChild(dontHaveMessage)
-    }
+            dontHaveMessage.classList.add(
+                'text-slate-500',
+                'font-bold',
+                'text-center',
+                'text-[20px]',
+                'pt-4'
+            )
+
+            divMessagePersonalizada.appendChild(dontHaveMessage)
+        }
+    })
 })
