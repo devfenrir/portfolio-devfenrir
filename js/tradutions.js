@@ -1,26 +1,50 @@
 const translations = {
-  pt: {
-    "nav-home": "início",
-    "nav-sobre": "sobre",
-    "nav-habilidades": "habilidades",
-    "nav-projetos": "projetos",
-    "nav-certificacoes": "certificações",
-    "nav-contato": "contato"
-  },
-  en: {
-    "nav-home": "home",
-    "nav-sobre": "about",
-    "nav-habilidades": "skills",
-    "nav-projetos": "projects",
-    "nav-certificacoes": "certifications",
-    "nav-contato": "contact"
-  },
-  es: {
-    "nav-home": "inicio",
-    "nav-sobre": "sobre",
-    "nav-habilidades": "habilidades",
-    "nav-projetos": "proyectos",
-    "nav-certificacoes": "certificaciones",
-    "nav-contato": "contacto"
-  }
+    pt: {
+        "nav-home": "início",
+        "nav-sobre": "sobre",
+        "nav-habilidades": "habilidades",
+        "nav-projetos": "projetos",
+        "nav-certificacoes": "certificações",
+        "nav-contato": "contato",
+        "principal-description": "Desenvolvedor Full Stack com foco em soluções escaláveis, combinando visão estratégica, código limpo e entrega de valor.",
+        "principal-ver-trabalhos": "Ver trabalhos",
+        "principal-baixar": "Baixar CV",
+        "about-description-one": "Me chamo Felipe, sou um desenvolvedor Full Stack em constante evolução, apaixonado por criar aplicações modernas, performáticas e com foco em experiência do usuário.",
+        "about-description-two": "Tenho conhecimento em tecnologias como HTML, CSS, JavaScript, Tailwind CSS, Bootstrap, Python e Java, com aprendizado contínuo em frameworks e boas práticas de desenvolvimento.",
+        "about-description-three": "Busco sempre escrever código limpo, escalável e com atenção aos detalhes de design e usabilidade.",
+        "habilidades-tittle": "Habilidades",
+        "habilidades-more-details": "Mais detalhes"
+    },
+    en: {
+        "nav-home": "home",
+        "nav-sobre": "about",
+        "nav-habilidades": "skills",
+        "nav-projetos": "projects",
+        "nav-certificacoes": "certifications",
+        "nav-contato": "contact",
+        "principal-description": "Full Stack Developer focused on scalable solutions, combining strategic vision, clean code, and value delivery.",
+        "principal-ver-trabalhos": "View works",
+        "principal-baixar": "Download CV",
+        "about-description-one": "My name is Felipe, I'm a constantly evolving Full Stack developer, passionate about creating modern, high-performance applications focused on user experience.",
+        "about-description-two": "I have knowledge in technologies like HTML, CSS, JavaScript, Tailwind CSS, Bootstrap, Python, and Java, with continuous learning in frameworks and best development practices.",
+        "about-description-three": "I always strive to write clean, scalable code with attention to design details and usability.",
+        "habilidades-tittle": "Skills",
+        "habilidades-more-details": "More details"
+    },
+    es: {
+        "nav-home": "inicio",
+        "nav-sobre": "sobre",
+        "nav-habilidades": "habilidades",
+        "nav-projetos": "proyectos",
+        "nav-certificacoes": "certificaciones",
+        "nav-contato": "contacto",
+        "principal-description": "Desarrollador Full Stack enfocado en soluciones escalables, combinando visión estratégica, código limpio y entrega de valor.",
+        "principal-ver-trabalhos": "Ver trabajos",
+        "principal-baixar": "Descargar CV",
+        "about-description-one": "Me llamo Felipe, soy un desarrollador Full Stack en constante evolución, apasionado por crear aplicaciones modernas, de alto rendimiento y con enfoque en la experiencia del usuario.",
+        "about-description-two": "Tengo conocimientos en tecnologías como HTML, CSS, JavaScript, Tailwind CSS, Bootstrap, Python y Java, con aprendizaje continuo en frameworks y buenas prácticas de desarrollo.",
+        "about-description-three": "Siempre busco escribir código limpio, escalable y con atención a los detalles de diseño y usabilidad.",
+        "habilidades-tittle": "Habilidades",
+        "habilidades-more-details": "Más detalles"
+    }
 };
