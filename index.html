@@ -121,23 +121,21 @@
                     DevFenrir
                 </h1>
 
-                <!-- Nav: escondido no mobile, aparece no md+ -->
                 <nav class="hidden md:flex flex-wrap justify-center gap-8">
                     <a data-i18n="nav-home" href="#secao-principal"
-                        class="nav-link text-slate-400 hover:text-white transition duration-200">início</a>
+                        class="nav-link text-slate-400 hover:text-white transition duration-200" data-items-item-1>início</a>
                     <a data-i18n="nav-sobre" href="#section-about-me"
-                        class="nav-link text-slate-400 hover:text-white transition duration-200">sobre</a>
+                        class="nav-link text-slate-400 hover:text-white transition duration-200" data-items-item-2>sobre</a>
                     <a data-i18n="nav-habilidades" href="#section-habilidades"
-                        class="nav-link text-slate-400 hover:text-white transition duration-200">habilidades</a>
+                        class="nav-link text-slate-400 hover:text-white transition duration-200" data-items-item-3>habilidades</a>
                     <a data-i18n="nav-projetos" href="#section-projetos"
-                        class="nav-link text-slate-400 hover:text-white transition duration-200">projetos</a>
+                        class="nav-link text-slate-400 hover:text-white transition duration-200" data-items-item-4>projetos</a>
                     <a data-i18n="nav-certificacoes" href="/Pages/certifications.html"
-                        class="nav-link text-slate-400 hover:text-white transition duration-200">certificações</a>
+                        class="nav-link text-slate-400 hover:text-white transition duration-200" data-items-item-5>certificações</a>
                     <a data-i18n="nav-contato" href="#section-contatos"
-                        class="nav-link text-slate-400 hover:text-white transition duration-200">contato</a>
+                        class="nav-link text-slate-400 hover:text-white transition duration-200" data-items-item-6>contato</a>
                 </nav>
 
-                <!-- Select sempre visível -->
                 <div class="flex justify-center md:justify-end w-full md:w-auto mt-2 md:mt-0">
                     <select id="idioma"
                         class="bg-gray-900 text-white text-sm rounded px-2 py-1 border border-slate-700">
@@ -326,7 +324,7 @@
                     data-project-one>
                     <div class="flex justify-between pl-5 pr-6 pt-4">
                         <div class="flex items-center">
-                            <h3 data-i18n="projetos-tittle" class="text-lg sm:text-2xl text-neutral-200 md:text-3xl">
+                            <h3 class="text-lg sm:text-2xl text-neutral-200 md:text-3xl">
                                 EconoMy App</h3>
                             <span
                                 class="invisible sm:visible ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-800 shadow-lg shadow-blue-500/30 font-sans">Back-end</span>
@@ -465,7 +463,7 @@
 
         <!-- Whatsapp Fixo -->
         <section
-            class="invisible fixed top-[700px] left-[32px] p-5 w-18 h-18 bg-blue-800/40 rounded-bl-2xl rounded-[100px] 2xl:top-[507px] xl:w-22 xl:h-22"
+            class="invisible fixed top-[650px] left-[32px] p-5 w-18 h-18 bg-blue-800/40 rounded-bl-2xl rounded-[100px] 2xl:top-[507px] xl:w-22 xl:h-22"
             data-section-whatsapp>
             <a target="_blank" href="https://wa.me/555596930133" data-button-whatsapp>
                 <img class="xl:min-w-12 min-w-8" src="/assets/whatsapp.svg"
@@ -487,6 +485,7 @@
     <script src="/js/headerEffect.js"></script>
     <script src="/js/scroll.js" defer></script>
     <script src="/js/modalContact.js" defer></script>
+    <script src="/js/translationsLanguages.js"></script>
 </body>
 
 </html>

@@ -81,3 +81,27 @@ const translations = {
         "footer-description": "© 2025 devfenrir todos los derechos reservados."
     }
 };
+
+
+function updateLanguage(lang) {
+
+    document.querySelectorAll("[data-i18n]").forEach(element => {
+
+        const key = element.getAttribute("data-i18n")
+        if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key]
+        }
+    })
+
+}
+
+const selectIdioma = document.getElementById("idioma");
+
+selectIdioma.addEventListener("change", e => {
+    updateLanguage(e.target.value)
+});
+
+
+window.addEventListener("DOMContentLoaded", () => {
+    updateLanguage(selectIdioma.value)
+});
