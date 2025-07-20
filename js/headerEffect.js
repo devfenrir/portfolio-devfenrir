@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 headerItemThree.classList.remove('text-slate-500', 'transition-all')
                 headerItemFour.classList.remove('text-slate-500', 'transition-all')
                 headerItemFive.classList.remove('text-slate-500', 'transition-all')
+                headerItemSix.classList.remove('text-slate-500', 'transition-all')
             }
         })
     }
