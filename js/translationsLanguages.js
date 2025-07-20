@@ -25,7 +25,9 @@ const translations = {
         "contact-tittle": "Contato",
         "contact-description": "Interessado(a) em trabalhar juntos? Entre em contato para discutirmos seu próximo projeto.",
         "contact-linkedin-button": "Contato via Linkedin",
-        "footer-description": "© 2025 devfenrir todos os direitos reservados."
+        "footer-description": "© 2025 devfenrir todos os direitos reservados.",
+        "habilidades-especifico-web": "Desenvolvimento Web",
+        "habilidades-especifico-web-description": "Domínio de HTML, CSS, Bootstrap e Tailwind, com foco em responsividade, semântica e visual refinado. Conhecimento em JavaScript para interações básicas e manipulação de elementos. Experiência com organização de layout usando Flexbox e Grid, aplicação de animações suaves, uso de fontes personalizadas, gradientes, sombras e boa hierarquia visual. Consegue estruturar páginas modernas, acessíveis e bem otimizadas para dispositivos móveis."
     },
     no: {
         "nav-home": "hjem",
@@ -53,7 +55,9 @@ const translations = {
         "contact-tittle": "Kontakt",
         "contact-description": "Interessert i å jobbe sammen? Ta kontakt for å diskutere ditt neste prosjekt.",
         "contact-linkedin-button": "Kontakt via LinkedIn",
-        "footer-description": "© 2025 devfenrir alle rettigheter reservert."
+        "footer-description": "© 2025 devfenrir alle rettigheter reservert.",
+        "habilidades-especifico-web": "Webutvikling",
+        "habilidades-especifico-web-description": "Behersker HTML, CSS, Bootstrap og Tailwind, med fokus på responsivitet, semantikk og et raffinert visuelt design. Kunnskap i JavaScript for grunnleggende interaksjoner og manipulering av elementer. Erfaring med layoutorganisering ved bruk av Flexbox og Grid, jevne animasjoner, bruk av egendefinerte skrifttyper, gradienter, skygger og god visuell hierarki. I stand til å strukturere moderne, tilgjengelige og godt optimaliserte sider for mobile enheter."
     },
     en: {
         "nav-home": "home",
@@ -81,7 +85,9 @@ const translations = {
         "contact-tittle": "Contact",
         "contact-description": "Interested in working together? Get in touch so we can discuss your next project.",
         "contact-linkedin-button": "Contact via LinkedIn",
-        "footer-description": "© 2025 devfenrir all rights reserved."
+        "footer-description": "© 2025 devfenrir all rights reserved.",
+        "habilidades-especifico-web": "Web Development",
+        "habilidades-especifico-web-description": "Proficient in HTML, CSS, Bootstrap, and Tailwind, with a focus on responsiveness, semantics, and refined visual design. Knowledge of JavaScript for basic interactions and element manipulation.Experienced in layout organization using Flexbox and Grid, implementation of smooth animations, use of custom fonts, gradients, shadows, and strong visual hierarchy. Capable of structuring modern, accessible, and well-optimized pages for mobile devices."
     },
     es: {
         "nav-home": "inicio",
@@ -109,7 +115,9 @@ const translations = {
         "contact-tittle": "Contacto",
         "contact-description": "¿Interesado(a) en trabajar juntos? Ponte en contacto para que podamos hablar sobre tu próximo proyecto.",
         "contact-linkedin-button": "Contacto por LinkedIn",
-        "footer-description": "© 2025 devfenrir todos los derechos reservados."
+        "footer-description": "© 2025 devfenrir todos los derechos reservados.",
+        "habilidades-especifico-web": "Desarrollo Web",
+        "habilidades-especifico-web-description": "Dominio de HTML, CSS, Bootstrap y Tailwind, con enfoque en la responsividad, la semántica y un diseño visual refinado.Conocimiento de JavaScript para interacciones básicas y manipulación de elementos. Experiencia en la organización de diseños con Flexbox y Grid, aplicación de animaciones suaves, uso de fuentes personalizadas, degradados, sombras y una buena jerarquía visual. Capaz de estructurar páginas modernas, accesibles y bien optimizadas para dispositivos móviles."
     }
 };
 
