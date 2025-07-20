@@ -115,23 +115,37 @@
     <!-- Header -->
     <header class="fixed top-0 right-0 left-0 z-40" id="header" data-header>
         <div class="border-b border-slate-700">
-            <div class="flex justify-between items-center max-w-7xl mx-auto py-3 2xl:py-1 px-28 md:py-5 lg:py-2 sm:py-2"
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-3 max-w-7xl mx-auto py-4 px-6 md:px-28"
                 data-itens-header>
-                <h1 class="text-blue-700 text-2xl font-medium tracking-normal md:text-2xl">DevFenrir</h1>
-                <nav class="flex gap-8">
-                    <a data-i18n="nav-home" class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
-                        href="#secao-principal" data-items-item-1>início</a>
-                    <a data-i18n="nav-sobre" class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
-                        href="#section-about-me" data-items-item-2>sobre</a>
-                    <a data-i18n="nav-habilidades" class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
-                        href="#section-habilidades" data-items-item-3>habilidades</a>
-                    <a data-i18n="nav-projetos" class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
-                        href="#section-projetos" data-items-item-4>projetos</a>
-                    <a data-i18n="nav-certificacoes" class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
-                        href="/Pages/certifications.html" data-items-item-5>certificações</a>
-                    <a data-i18n="nav-contato" class="nav-link text-slate-400 hover:text-white transition duration-200 lg:my-4 md:my-1 md:visible invisible md:visible"
-                        href="#section-contatos" data-items-item-6>contato</a>
+                <h1 class="text-blue-700 text-3xl font-medium tracking-normal md:text-2xl text-center md:text-left">
+                    DevFenrir
+                </h1>
+
+                <!-- Nav: escondido no mobile, aparece no md+ -->
+                <nav class="hidden md:flex flex-wrap justify-center gap-8">
+                    <a data-i18n="nav-home" href="#secao-principal"
+                        class="nav-link text-slate-400 hover:text-white transition duration-200">início</a>
+                    <a data-i18n="nav-sobre" href="#section-about-me"
+                        class="nav-link text-slate-400 hover:text-white transition duration-200">sobre</a>
+                    <a data-i18n="nav-habilidades" href="#section-habilidades"
+                        class="nav-link text-slate-400 hover:text-white transition duration-200">habilidades</a>
+                    <a data-i18n="nav-projetos" href="#section-projetos"
+                        class="nav-link text-slate-400 hover:text-white transition duration-200">projetos</a>
+                    <a data-i18n="nav-certificacoes" href="/Pages/certifications.html"
+                        class="nav-link text-slate-400 hover:text-white transition duration-200">certificações</a>
+                    <a data-i18n="nav-contato" href="#section-contatos"
+                        class="nav-link text-slate-400 hover:text-white transition duration-200">contato</a>
                 </nav>
+
+                <!-- Select sempre visível -->
+                <div class="flex justify-center md:justify-end w-full md:w-auto mt-2 md:mt-0">
+                    <select id="idioma"
+                        class="bg-gray-900 text-white text-sm rounded px-2 py-1 border border-slate-700">
+                        <option value="pt">🇧🇷 PT</option>
+                        <option value="en">🇺🇸 EN</option>
+                        <option value="es">🇪🇸 ES</option>
+                    </select>
+                </div>
             </div>
         </div>
     </header>
@@ -154,12 +168,14 @@
                 <div class="flex items-center flex-col gap-4 pt-2 sm:flex-row sm:gap-8 sm:pt-8">
                     <div
                         class="border border-slate-300/15 flex items-center bg-blue-800 p-3 pl-12 pr-12 sm:pl-8 sm:pr-8 gap-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 font-sans">
-                        <a data-i18n="principal-ver-trabalhos" class="text-white" href="#section-projetos">Ver trabalhos</a>
+                        <a data-i18n="principal-ver-trabalhos" class="text-white" href="#section-projetos">Ver
+                            trabalhos</a>
                         <img src="/assets/arrow-icon.svg" alt="Icone de uma seta">
                     </div>
                     <div
-                        class="border border-slate-300 p-3 pl-15 pr-15 sm:pl-8 sm:pr-8 rounded-lg hover:bg-white hover:text-neutral-800 hover:font-semibold transition-colors duration-300 font-sans">
-                        <a data-i18n="principal-baixar" href="/assets/curriculum/felipedasilvacampagnol.cv.pdf" download>Baixar CV</a>
+                        class="border border-slate-300 p-3 px-18 sm:pl-8 sm:pr-8 rounded-lg hover:bg-white hover:text-neutral-800 hover:font-semibold transition-colors duration-300 font-sans">
+                        <a data-i18n="principal-baixar" href="/assets/curriculum/felipedasilvacampagnol.cv.pdf"
+                            download>Baixar CV</a>
                     </div>
                 </div>
                 <div class="flex gap-4 pt-10">
@@ -180,7 +196,8 @@
         <section class="opacity-0 translate-y-5 transition-all duration-700 ease-in-out border-t border-slate-900 mt-52"
             id="section-about-me" data-section-about-me>
             <div class="mt-30">
-                <h2 data-i18n="about-tittle" class="text-neutral-200 text-center text-3xl pb-10 md:text-5xl sm:text-4xl sm:mb-10">Sobre mim</h2>
+                <h2 data-i18n="about-tittle"
+                    class="text-neutral-200 text-center text-3xl pb-10 md:text-5xl sm:text-4xl sm:mb-10">Sobre mim</h2>
                 <div class="flex items-center gap-20 justify-center flex-col-reverse md:flex-row">
                     <div class="md:w-220 sm:w-140 flex flex-col gap-8" data-section-descricao-about-me>
                         <p data-i18n="about-description-one"
@@ -223,42 +240,55 @@
         <!-- Seção Habilidades -->
         <section class="opacity-0 translate-y-5 transition-all duration-700 ease-in-out border-t border-slate-900 mt-28"
             id="section-habilidades" data-section-skills>
-            <h2 data-i18n="habilidades-tittle" class="text-neutral-200 text-center text-3xl pb-10 md:text-5xl sm:text-4xl sm:mb-10 pt-20">Habilidades</h2>
+            <h2 data-i18n="habilidades-tittle"
+                class="text-neutral-200 text-center text-3xl pb-10 md:text-5xl sm:text-4xl sm:mb-10 pt-20">Habilidades
+            </h2>
             <div class="opacity-0 translate-y-0 transition-opacity transition-transform duration-500 flex flex-wrap justify-center gap-10 mt-24"
                 data-section-skills-items>
                 <div
                     class="w-66 sm:w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
                     <div class="flex items-center gap-4 pl-5 pt-5">
                         <img class="w-9" src="/assets/front-end.svg" alt="icone indicando a área front-end">
-                        <h3 data-i18n="habilidades-sub-tittle-one" class="text-neutral-200 font-medium text-xl font-sans">Front-end</h3>
+                        <h3 data-i18n="habilidades-sub-tittle-one"
+                            class="text-neutral-200 font-medium text-xl font-sans">Front-end</h3>
                     </div>
                     <div class="pl-5 pt-5 flex flex-col gap-2">
-                        <p data-i18n="habilidades-sub-tittle-one-item-one" class="text-neutral-200 font-thin text-lg">Html e Css</p>
-                        <p data-i18n="habilidades-sub-tittle-one-item-two" class="text-neutral-200 font-thin text-lg">Javascript</p>
-                        <p data-i18n="habilidades-sub-tittle-one-item-three" class="text-neutral-200 font-thin text-lg">Bootstrap</p>
-                        <p data-i18n="habilidades-sub-tittle-one-item-four" class="text-neutral-200 font-thin text-lg">Tailwind CSS</p>
+                        <p data-i18n="habilidades-sub-tittle-one-item-one" class="text-neutral-200 font-thin text-lg">
+                            Html e Css</p>
+                        <p data-i18n="habilidades-sub-tittle-one-item-two" class="text-neutral-200 font-thin text-lg">
+                            Javascript</p>
+                        <p data-i18n="habilidades-sub-tittle-one-item-three" class="text-neutral-200 font-thin text-lg">
+                            Bootstrap</p>
+                        <p data-i18n="habilidades-sub-tittle-one-item-four" class="text-neutral-200 font-thin text-lg">
+                            Tailwind CSS</p>
                     </div>
                 </div>
                 <div
                     class="w-66 sm:w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
                     <div class="flex items-center gap-4 pl-5 pt-5">
                         <img class="w-7" src="/assets/back-end.svg" alt="icone indicando a área back-end">
-                        <h3 data-i18n="habilidades-sub-tittle-two" class="text-neutral-200 font-medium text-xl font-sans">Back-end</h3>
+                        <h3 data-i18n="habilidades-sub-tittle-two"
+                            class="text-neutral-200 font-medium text-xl font-sans">Back-end</h3>
                     </div>
                     <div class="pl-5 pt-5 flex flex-col gap-2">
-                        <p data-i18n="habilidades-sub-tittle-two-item-one" class="text-neutral-200 font-thin text-lg">Java</p>
-                        <p data-i18n="habilidades-sub-tittle-two-item-two" class="text-neutral-200 font-thin text-lg">Python</p>
+                        <p data-i18n="habilidades-sub-tittle-two-item-one" class="text-neutral-200 font-thin text-lg">
+                            Java</p>
+                        <p data-i18n="habilidades-sub-tittle-two-item-two" class="text-neutral-200 font-thin text-lg">
+                            Python</p>
                     </div>
                 </div>
                 <div
                     class="w-66 sm:w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
                     <div class="flex items-center gap-4 pl-5 pt-5">
                         <img class="w-8" src="/assets/database.svg" alt="icone indicando a área de banco de dados">
-                        <h3 data-i18n="habilidades-sub-tittle-three" class="text-neutral-200 font-medium text-xl font-sans">Data Base</h3>
+                        <h3 data-i18n="habilidades-sub-tittle-three"
+                            class="text-neutral-200 font-medium text-xl font-sans">Data Base</h3>
                     </div>
                     <div class="pl-5 pt-5 flex flex-col gap-2">
-                        <p data-i18n="habilidades-sub-tittle-three-item-one" class="text-neutral-200 font-thin text-lg">Oracle SQL Developer Data Modeler</p>
-                        <p data-i18n="habilidades-sub-tittle-three-item-two" class="text-neutral-200 font-thin text-lg">SQL</p>
+                        <p data-i18n="habilidades-sub-tittle-three-item-one" class="text-neutral-200 font-thin text-lg">
+                            Oracle SQL Developer Data Modeler</p>
+                        <p data-i18n="habilidades-sub-tittle-three-item-two" class="text-neutral-200 font-thin text-lg">
+                            SQL</p>
                     </div>
                 </div>
                 <div
@@ -266,16 +296,21 @@
                     <div class="flex items-center gap-4 pl-5 pt-5">
                         <img class="w-8" src="/assets/tools.svg"
                             alt="icone de ferramenta indicando a área de ferramentas">
-                        <h3 data-i18n="habilidades-sub-tittle-four" class="text-neutral-200 font-medium text-xl font-sans">Tools</h3>
+                        <h3 data-i18n="habilidades-sub-tittle-four"
+                            class="text-neutral-200 font-medium text-xl font-sans">Tools</h3>
                     </div>
                     <div class="pl-5 pt-5 flex flex-col gap-2">
-                        <p data-i18n="habilidades-sub-tittle-four-item-one" class="text-neutral-200 font-thin text-lg">Figma</p>
-                        <p data-i18n="habilidades-sub-tittle-four-item-two" class="text-neutral-200 font-thin text-lg">Excalidraw</p>
-                        <p data-i18n="habilidades-sub-tittle-four-item-three" class="text-neutral-200 font-thin text-lg">Git e Github</p>
+                        <p data-i18n="habilidades-sub-tittle-four-item-one" class="text-neutral-200 font-thin text-lg">
+                            Figma</p>
+                        <p data-i18n="habilidades-sub-tittle-four-item-two" class="text-neutral-200 font-thin text-lg">
+                            Excalidraw</p>
+                        <p data-i18n="habilidades-sub-tittle-four-item-three"
+                            class="text-neutral-200 font-thin text-lg">Git e Github</p>
                     </div>
                 </div>
             </div>
-            <a data-i18n="habilidades-more-details" class="border border-slate-300/15 flex text-neutral-200 mt-26 justify-center px-15 py-4 bg-blue-900/50 rounded-full hover:bg-blue-800 transition-colors duration-300 font-sans mx-auto w-fit"
+            <a data-i18n="habilidades-more-details"
+                class="border border-slate-300/15 flex text-neutral-200 mt-26 justify-center px-15 py-4 bg-blue-900/50 rounded-full hover:bg-blue-800 transition-colors duration-300 font-sans mx-auto w-fit"
                 href="/Pages/skills-details.html">Mais detalhes</a>
         </section>
 
@@ -283,14 +318,16 @@
         <section
             class="opacity-0 translate-y-5 transition-all duration-700 ease-in-out border-t border-slate-900 mt-64 pb-32"
             id="section-projetos" data-section-projects>
-            <h2 data-i18n="projetos-tittle" class="text-neutral-200 text-center text-3xl pb-10 md:text-5xl sm:text-4xl sm:mb-10 pt-20">Meus Projetos
+            <h2 data-i18n="projetos-tittle"
+                class="text-neutral-200 text-center text-3xl pb-10 md:text-5xl sm:text-4xl sm:mb-10 pt-20">Meus Projetos
             </h2>
             <div class="mt-24 grid justify-center gap-12">
                 <div class="2xl:w-250 w-68 min-h-50 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300 xl:w-250 lg:w-220 md:w-180 sm:w-145"
                     data-project-one>
                     <div class="flex justify-between pl-5 pr-6 pt-4">
                         <div class="flex items-center">
-                            <h3 data-i18n="projetos-tittle" class="text-lg sm:text-2xl text-neutral-200 md:text-3xl">EconoMy App</h3>
+                            <h3 data-i18n="projetos-tittle" class="text-lg sm:text-2xl text-neutral-200 md:text-3xl">
+                                EconoMy App</h3>
                             <span
                                 class="invisible sm:visible ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-800 shadow-lg shadow-blue-500/30 font-sans">Back-end</span>
                         </div>
@@ -303,7 +340,8 @@
                         </div>
                     </div>
                     <div class="pl-5 pr-6 pt-9">
-                        <p data-i18n="projetos-description-one" class="text-neutral-300 text-light font-sans sm:text-sm pb-7 sm:pb-4 md:pb-2 md:text-md">
+                        <p data-i18n="projetos-description-one"
+                            class="text-neutral-300 text-light font-sans sm:text-sm pb-7 sm:pb-4 md:pb-2 md:text-md">
                             EconoMy é
                             um software desenvolvido em Java,
                             projetado
@@ -329,7 +367,9 @@
                         </div>
                     </div>
                     <div class="pl-5 pr-6 pt-9">
-                        <p data-i18n="projetos-description-two" class="text-neutral-300 text-light font-sans sm:text-sm pb-7 sm:pb-4 md:pb-2 md:text-md">Fyvo
+                        <p data-i18n="projetos-description-two"
+                            class="text-neutral-300 text-light font-sans sm:text-sm pb-7 sm:pb-4 md:pb-2 md:text-md">
+                            Fyvo
                             é
                             uma fintech brasileira
                             criada com o
@@ -343,7 +383,8 @@
                     data-project-three>
                     <div class="flex justify-between pl-5 pr-6 pt-4">
                         <div class="flex items-center">
-                            <h3 data-i18n="projetos-tittle-cadastro-project" class="text-lg sm:text-2xl text-neutral-200 md:text-3xl">Cadastro de Usuário
+                            <h3 data-i18n="projetos-tittle-cadastro-project"
+                                class="text-lg sm:text-2xl text-neutral-200 md:text-3xl">Cadastro de Usuário
                             </h3>
                             <span
                                 class="invisible sm:visible ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-800 shadow-lg shadow-blue-500/30 font-sans">Back-end</span>
@@ -358,7 +399,9 @@
                         </div>
                     </div>
                     <div class="pl-5 pr-6 pt-9">
-                        <p data-i18n="projetos-description-three" class="text-neutral-300 text-light font-sans sm:text-sm pb-7 sm:pb-4 md:pb-2 md:text-md">Este
+                        <p data-i18n="projetos-description-three"
+                            class="text-neutral-300 text-light font-sans sm:text-sm pb-7 sm:pb-4 md:pb-2 md:text-md">
+                            Este
                             projeto é um sistema simples
                             de cadastro
                             de
@@ -371,7 +414,8 @@
                     data-project-three>
                     <div class="flex justify-between pl-5 pr-6 pt-4">
                         <div class="flex items-center">
-                            <h3 data-i18n="projetos-tittle-analysis-project" class="text-lg sm:text-2xl text-neutral-200 md:text-3xl">Análise de Vendas
+                            <h3 data-i18n="projetos-tittle-analysis-project"
+                                class="text-lg sm:text-2xl text-neutral-200 md:text-3xl">Análise de Vendas
                             </h3>
                             <span
                                 class="invisible sm:visible ml-5 mt-2 pl-5 pr-5 pt-1 pb-1 rounded-full text-neutral-200 bg-blue-800 shadow-lg shadow-blue-500/30 font-sans">Back-end</span>
@@ -386,7 +430,11 @@
                         </div>
                     </div>
                     <div class="pl-5 pr-6 pt-9">
-                        <p data-i18n="projetos-description-four" class="text-neutral-300 text-light font-sans sm:text-sm pb-7 sm:pb-4 md:pb-2 md:text-md">Projeto de análise de dados de vendas utilizando SQL para consultas e extração de insights. Focado em gerar relatórios e métricas que ajudam a entender o desempenho comercial e apoiar a tomada de decisões.
+                        <p data-i18n="projetos-description-four"
+                            class="text-neutral-300 text-light font-sans sm:text-sm pb-7 sm:pb-4 md:pb-2 md:text-md">
+                            Projeto de análise de dados de vendas utilizando SQL para consultas e extração de insights.
+                            Focado em gerar relatórios e métricas que ajudam a entender o desempenho comercial e apoiar
+                            a tomada de decisões.
                         </p>
                     </div>
                 </div>
@@ -396,15 +444,18 @@
         <!-- Seção Contact -->
         <section class="opacity-0 translate-y-5 transition-all duration-700 ease-in-out border-t border-slate-900 mt-34"
             id="section-contatos" data-section-contact>
-            <h2 data-i18n="contact-tittle" class="text-neutral-200 text-center text-3xl pb-1 md:text-5xl sm:text-4xl sm:mb-10 pt-20">Contato</h2>
-            <p data-i18n="contact-description" class="text-neutral-400 text-light text-center p-2 text-lg md:text-xl">Interessado(a) em trabalhar
+            <h2 data-i18n="contact-tittle"
+                class="text-neutral-200 text-center text-3xl pb-1 md:text-5xl sm:text-4xl sm:mb-10 pt-20">Contato</h2>
+            <p data-i18n="contact-description" class="text-neutral-400 text-light text-center p-2 text-lg md:text-xl">
+                Interessado(a) em trabalhar
                 juntos?
                 Entre em
                 contato
                 para
                 discutirmos seu próximo projeto.</p>
             <div class="flex justify-center md:flex-row flex-col items-center gap-6 pt-4">
-                <a data-i18n="contact-linkedin-button" class="
+                <a data-i18n="contact-linkedin-button"
+                    class="
                 flex items-center border border-white pt-3 pb-3 pr-8 pl-8 md:p-3 md:pl-4 md:pr-5 gap-3 rounded text-neutral-200 hover:bg-black hover:border-gray-900 transition-colors duration-300 font-sans"
                     target="_blank" href="https://www.linkedin.com/in/felipescampagnol"><img class="w-7"
                         src="/assets/linkedin-branco.svg" alt="ícone da rede social linkedin">Contato via
@@ -427,7 +478,8 @@
     <!-- Rodapé -->
     <footer class="mt-20">
         <div class="border-t border-slate-900">
-            <p data-i18n="footer-description" class="pt-10 pb-9 text-center text-neutral-400">© 2025 devfenrir todos os direitos reservados.
+            <p data-i18n="footer-description" class="pt-10 pb-9 text-center text-neutral-400">© 2025 devfenrir todos os
+                direitos reservados.
             </p>
         </div>
     </footer>
