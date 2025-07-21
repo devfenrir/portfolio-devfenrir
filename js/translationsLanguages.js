@@ -59,7 +59,8 @@ const translations = {
         "ux-designer-description": "Neste curso, aprofundei meus conhecimentos em Experiência do Usuário (UX), entendendo como projetar interfaces centradas nas necessidades reais dos usuários.",
         "sql-manipulacao-dados": "SQL - manipulando dados",
         "sql-manipulacao-dados-description": "Neste curso, aprendi a manipular dados utilizando a linguagem SQL, explorando comandos essenciais como SELECT, INSERT, ALTER TABLE, UPDATE e DELETE.",
-        "mais-detalhes-button-certificados": "Mais detalhes"
+        "mais-detalhes-button-certificados": "Mais detalhes",
+        "comunicacao-profissional": "Certificados Profissionais"
     },
 
     no: {
@@ -121,7 +122,8 @@ const translations = {
         "ux-designer-description": "I dette kurset fordypet jeg meg i brukeropplevelse (UX), og lærte hvordan man designer grensesnitt som er sentrert rundt reelle brukerbehov.",
         "sql-manipulacao-dados": "SQL - datamanipulasjon",
         "sql-manipulacao-dados-description": "I dette kurset lærte jeg å manipulere data med SQL, og utforsket viktige kommandoer som SELECT, INSERT, ALTER TABLE, UPDATE og DELETE.",
-        "mais-detalhes-button-certificados": "Flere detaljer"
+        "mais-detalhes-button-certificados": "Flere detaljer",
+        "comunicacao-profissional": "Profesjonelle Sertifikater"
 
     },
 
@@ -184,7 +186,8 @@ const translations = {
         "ux-designer-description": "In this course, I deepened my knowledge in User Experience (UX), understanding how to design interfaces centered on real user needs.",
         "sql-manipulacao-dados": "SQL - data manipulation",
         "sql-manipulacao-dados-description": "In this course, I learned to manipulate data using SQL language, exploring essential commands such as SELECT, INSERT, ALTER TABLE, UPDATE, and DELETE.",
-        "mais-detalhes-button-certificados": "More details"
+        "mais-detalhes-button-certificados": "More details",
+        "comunicacao-profissional": "Professional Certificates"
     },
 
     es: {
@@ -246,7 +249,8 @@ const translations = {
         "ux-designer-description": "En este curso, profundicé mis conocimientos en Experiencia de Usuario (UX), comprendiendo cómo diseñar interfaces centradas en las necesidades reales de los usuarios.",
         "sql-manipulacao-dados": "SQL - manipulación de datos",
         "sql-manipulacao-dados-description": "En este curso, aprendí a manipular datos utilizando el lenguaje SQL, explorando comandos esenciales como SELECT, INSERT, ALTER TABLE, UPDATE y DELETE.",
-        "mais-detalhes-button-certificados": "Más detalles"
+        "mais-detalhes-button-certificados": "Más detalles",
+        "comunicacao-profissional": "Certificados Profesionales"
 
     }
 };
