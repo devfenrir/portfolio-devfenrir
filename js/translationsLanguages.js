@@ -60,7 +60,8 @@ const translations = {
         "sql-manipulacao-dados": "SQL - manipulando dados",
         "sql-manipulacao-dados-description": "Neste curso, aprendi a manipular dados utilizando a linguagem SQL, explorando comandos essenciais como SELECT, INSERT, ALTER TABLE, UPDATE e DELETE.",
         "mais-detalhes-button-certificados": "Mais detalhes",
-        "comunicacao-profissional": "Certificados Profissionais"
+        "comunicacao-profissional": "Certificados Profissionais",
+        "footer-description": "© 2025 devfenrir todos os direitos reservados."
     },
 
     no: {
@@ -123,7 +124,8 @@ const translations = {
         "sql-manipulacao-dados": "SQL - datamanipulasjon",
         "sql-manipulacao-dados-description": "I dette kurset lærte jeg å manipulere data med SQL, og utforsket viktige kommandoer som SELECT, INSERT, ALTER TABLE, UPDATE og DELETE.",
         "mais-detalhes-button-certificados": "Flere detaljer",
-        "comunicacao-profissional": "Profesjonelle Sertifikater"
+        "comunicacao-profissional": "Profesjonelle Sertifikater",
+        "footer-description": "© 2025 devfenrir alle rettigheter reservert."
 
     },
 
@@ -187,7 +189,8 @@ const translations = {
         "sql-manipulacao-dados": "SQL - data manipulation",
         "sql-manipulacao-dados-description": "In this course, I learned to manipulate data using SQL language, exploring essential commands such as SELECT, INSERT, ALTER TABLE, UPDATE, and DELETE.",
         "mais-detalhes-button-certificados": "More details",
-        "comunicacao-profissional": "Professional Certificates"
+        "comunicacao-profissional": "Professional Certificates",
+        "footer-description": "© 2025 devfenrir all rights reserved."
     },
 
     es: {
@@ -250,7 +253,8 @@ const translations = {
         "sql-manipulacao-dados": "SQL - manipulación de datos",
         "sql-manipulacao-dados-description": "En este curso, aprendí a manipular datos utilizando el lenguaje SQL, explorando comandos esenciales como SELECT, INSERT, ALTER TABLE, UPDATE y DELETE.",
         "mais-detalhes-button-certificados": "Más detalles",
-        "comunicacao-profissional": "Certificados Profesionales"
+        "comunicacao-profissional": "Certificados Profesionales",
+        "footer-description": "© 2025 devfenrir todos los derechos reservados."
 
     }
 };
