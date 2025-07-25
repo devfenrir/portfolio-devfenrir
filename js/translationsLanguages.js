@@ -1,5 +1,6 @@
 const translations = {
 
+ // Linguagem padrão - Português
     pt: {
         "nav-home": "início",
         "nav-sobre": "sobre",
@@ -64,6 +65,7 @@ const translations = {
         "footer-description": "© 2025 devfenrir todos os direitos reservados."
     },
 
+    // Linguagem inglês
     en: {
         "nav-home": "home",
         "nav-sobre": "about",
@@ -128,6 +130,7 @@ const translations = {
         "footer-description": "© 2025 devfenrir all rights reserved."
     },
 
+    // Linguagem español
     es: {
         "nav-home": "inicio",
         "nav-sobre": "sobre",
