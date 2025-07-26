@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevFenrir | Full Stack Developer | Portfólio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <style>
         /* Estilos Locais do Hover Header */
         .nav-link {
@@ -237,83 +238,138 @@
         </section>
 
         <!-- Seção Habilidades -->
-        <section
-            class="opacity-0 translate-y-5 transition-all duration-700 ease-in-out border-t border-slate-900 mt-28 bg-gray-950/50 shadow-md shadow-blue-900/9"
+        <section class="opacity-0 translate-y-5 transition-all duration-700 ease-in-out mt-28 bg-gray-950/50"
             id="section-habilidades" data-section-skills>
             <h2 data-i18n="habilidades-tittle"
                 class="text-neutral-200 text-center text-3xl pb-10 md:text-5xl sm:text-4xl sm:mb-10 pt-20">Habilidades
             </h2>
-            <div class="opacity-0 translate-y-0 transition-opacity transition-transform duration-500 flex flex-wrap justify-center gap-10 mt-24"
-                data-section-skills-items>
-                <div
-                    class="w-66 sm:w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
-                    <div class="flex items-center gap-4 pl-5 pt-5">
-                        <img class="w-9" src="/assets/front-end.svg" alt="icone indicando a área front-end">
-                        <h3 data-i18n="habilidades-sub-tittle-one"
-                            class="text-neutral-200 font-medium text-xl font-sans">Front-end</h3>
-                    </div>
-                    <div class="pl-5 pt-5 flex flex-col gap-2 pb-4">
-                        <p data-i18n="habilidades-sub-tittle-one-item-one" class="text-neutral-200 font-thin text-lg">
-                            Html e Css</p>
-                        <p data-i18n="habilidades-sub-tittle-one-item-two" class="text-neutral-200 font-thin text-lg">
-                            Javascript</p>
-                        <p data-i18n="habilidades-sub-tittle-one-item-three" class="text-neutral-200 font-thin text-lg">
-                            Bootstrap</p>
-                        <p data-i18n="habilidades-sub-tittle-one-item-four" class="text-neutral-200 font-thin text-lg">
-                            Tailwind CSS</p>
-                        <p data-i18n="habilidades-sub-tittle-one-item-four" class="text-neutral-200 font-thin text-lg">
-                            Typescript</p>
-                    </div>
+            <div class="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6 py-10">
+
+                <!-- Icone html -->
+                <div class="relative group flex flex-col items-center">
+                    <i
+                        class="devicon-html5-plain colored text-6xl p-2 md:text-7x1 transition-transform duration-300 hover:scale-110 hover:drop-shadow-xl"></i>
+                    <span
+                        class="absolute bottom-[-2rem] text-sm text-white bg-black px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Html5
+                    </span>
                 </div>
-                <div
-                    class="w-66 sm:w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
-                    <div class="flex items-center gap-4 pl-5 pt-5">
-                        <img class="w-7" src="/assets/back-end.svg" alt="icone indicando a área back-end">
-                        <h3 data-i18n="habilidades-sub-tittle-two"
-                            class="text-neutral-200 font-medium text-xl font-sans">Back-end</h3>
-                    </div>
-                    <div class="pl-5 pt-5 flex flex-col gap-2">
-                        <p data-i18n="habilidades-sub-tittle-two-item-one" class="text-neutral-200 font-thin text-lg">
-                            Java</p>
-                        <p data-i18n="habilidades-sub-tittle-two-item-two" class="text-neutral-200 font-thin text-lg">
-                            Python</p>
-                    </div>
+
+                <!-- Icone css -->
+                <div class="relative group flex flex-col items-center">
+                    <i
+                        class="devicon-css3-plain colored text-6xl p-2 md:text-7x1 transition-transform duration-300 hover:scale-110 hover:drop-shadow-xl"></i>
+                    <span
+                        class="absolute bottom-[-2rem] text-sm text-white bg-black px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Css3
+                    </span>
                 </div>
-                <div
-                    class="w-66 sm:w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
-                    <div class="flex items-center gap-4 pl-5 pt-5">
-                        <img class="w-8" src="/assets/database.svg" alt="icone indicando a área de banco de dados">
-                        <h3 data-i18n="habilidades-sub-tittle-three"
-                            class="text-neutral-200 font-medium text-xl font-sans">Data Base</h3>
-                    </div>
-                    <div class="pl-5 pt-5 flex flex-col gap-2">
-                        <p data-i18n="habilidades-sub-tittle-three-item-one" class="text-neutral-200 font-thin text-lg">
-                            Oracle SQL Developer Data Modeler</p>
-                        <p data-i18n="habilidades-sub-tittle-three-item-two" class="text-neutral-200 font-thin text-lg">
-                            SQL</p>
-                    </div>
+
+                <!-- Icone javascript -->
+                <div class="relative group flex flex-col items-center">
+                    <i
+                        class="devicon-javascript-plain colored text-6xl p-2 md:text-7x1 transition-transform duration-300 hover:scale-110 hover:drop-shadow-xl"></i>
+                    <span
+                        class="absolute bottom-[-2rem] text-sm text-white bg-black px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Javascript
+                    </span>
                 </div>
-                <div
-                    class="w-66 sm:w-80 min-h-60 bg-slate-900 border border-slate-700 rounded hover:border-slate-500 transition-colors duration-300">
-                    <div class="flex items-center gap-4 pl-5 pt-5">
-                        <img class="w-8" src="/assets/tools.svg"
-                            alt="icone de ferramenta indicando a área de ferramentas">
-                        <h3 data-i18n="habilidades-sub-tittle-four"
-                            class="text-neutral-200 font-medium text-xl font-sans">Tools</h3>
-                    </div>
-                    <div class="pl-5 pt-5 flex flex-col gap-2">
-                        <p data-i18n="habilidades-sub-tittle-four-item-one" class="text-neutral-200 font-thin text-lg">
-                            Figma</p>
-                        <p data-i18n="habilidades-sub-tittle-four-item-two" class="text-neutral-200 font-thin text-lg">
-                            Excalidraw</p>
-                        <p data-i18n="habilidades-sub-tittle-four-item-three"
-                            class="text-neutral-200 font-thin text-lg">Git e Github</p>
-                    </div>
+
+                <!-- Icone typescript -->
+                <div class="relative group flex flex-col items-center">
+                    <i
+                        class="devicon-typescript-plain colored text-6xl p-2 md:text-7x1 transition-transform duration-300 hover:scale-110 hover:drop-shadow-xl"></i>
+                    <span
+                        class="absolute bottom-[-2rem] text-sm text-white bg-black px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Typescript
+                    </span>
                 </div>
+
+                <!-- Icone bootstrap -->
+                <div class="relative group flex flex-col items-center">
+                    <i
+                        class="devicon-bootstrap-plain colored text-6xl p-2 md:text-7x1 transition-transform duration-300 hover:scale-110 hover:drop-shadow-xl"></i>
+                    <span
+                        class="absolute bottom-[-2rem] text-sm text-white bg-black px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Bootstrap
+                    </span>
+                </div>
+
+                <!-- Icone tailwind css -->
+                <div class="relative group flex flex-col items-center">
+                    <i
+                        class="devicon-tailwindcss-plain colored text-6xl p-2 md:text-7x1 transition-transform duration-300 hover:scale-110 hover:drop-shadow-xl"></i>
+                    <span
+                        class="absolute bottom-[-2rem] text-sm text-white bg-black px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Tailwind Css
+                    </span>
+                </div>
+
+                <!-- Icone java -->
+                <div class="relative group flex flex-col items-center">
+                    <i
+                        class="devicon-java-plain colored text-6xl p-2 md:text-7x1 transition-transform duration-300 hover:scale-110 hover:drop-shadow-xl"></i>
+                    <span
+                        class="absolute bottom-[-2rem] text-sm text-white bg-black px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Java
+                    </span>
+                </div>
+
+                <!-- Icone python -->
+                <div class="relative group flex flex-col items-center">
+                    <i
+                        class="devicon-python-plain colored text-6xl p-2 md:text-7x1 transition-transform duration-300 hover:scale-110 hover:drop-shadow-xl"></i>
+                    <span
+                        class="absolute bottom-[-2rem] text-sm text-white bg-black px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Python
+                    </span>
+                </div>
+
+                <!-- Icone sql -->
+                <div class="relative group flex flex-col items-center">
+                    <i
+                        class="devicon-mysql-plain colored text-6xl p-2 md:text-7x1 transition-transform duration-300 hover:scale-110 hover:drop-shadow-xl"></i>
+                    <span
+                        class="absolute bottom-[-2rem] text-sm text-white bg-black px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Sql
+                    </span>
+                </div>
+
+                <!-- Icone git -->
+                <div class="relative group flex flex-col items-center">
+                    <i
+                        class="devicon-git-plain colored text-6xl p-2 md:text-7x1 transition-transform duration-300 hover:scale-110 hover:drop-shadow-xl"></i>
+                    <span
+                        class="absolute bottom-[-2rem] text-sm text-white bg-black px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Git
+                    </span>
+                </div>
+
+
+                <!-- Icone GITHUB -->
+                <div class="relative group flex flex-col items-center">
+                    <i
+                        class="devicon-github-original colored text-6xl p-2 md:text-7x1 transition-transform duration-300 hover:scale-110 hover:drop-shadow-xl"></i>
+                    <span
+                        class="absolute bottom-[-2rem] text-sm text-white bg-black px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Github
+                    </span>
+                </div>
+
+                <!-- Icone figma -->
+                <div class="relative group flex flex-col items-center">
+                    <i
+                        class="devicon-figma-plain colored text-6xl p-2 md:text-7x1 transition-transform duration-300 hover:scale-110 hover:drop-shadow-xl"></i>
+                    <span
+                        class="absolute bottom-[-2rem] text-sm text-white bg-black px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Figma
+                    </span>
+                </div>
+
             </div>
             <div class="pb-10">
                 <a data-i18n="habilidades-more-details"
-                    class="border border-slate-300/15 flex text-black font-semibold mt-26 justify-center px-15 py-4 bg-white/80 rounded-full hover:bg-slate-900/60 hover:text-white transition-colors duration-300 font-sans mx-auto w-fit"
+                    class="border border-slate-300/15 flex text-black font-semibold mt-26 justify-center px-15 py-4 bg-blue-900 hover:bg-blue-700 text-white rounded-full hover:text-white transition-colors duration-300 font-sans mx-auto w-fit"
                     href="/Pages/skills-details.html">Mais detalhes</a>
             </div>
         </section>
@@ -441,6 +497,11 @@
                         </p>
                     </div>
                 </div>
+            </div>
+            <div>
+                <a data-i18n="habilidades-more-details"
+                    class="border border-slate-300/15 flex text-black font-semibold mt-26 justify-center px-15 py-4 bg-blue-900 hover:bg-blue-700 text-white rounded-full hover:text-white transition-colors duration-300 font-sans mx-auto w-fit"
+                    href="/Pages/skills-details.html">Mais detalhes</a>
             </div>
         </section>
 
