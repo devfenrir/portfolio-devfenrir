@@ -109,7 +109,7 @@
 <body class="bg-black font-[Sora]">
 
     <!-- Header -->
-    <header class="fixed top-0 right-0 left-0 z-40" id="header" data-header>
+    <header class="fixed top-0 right-0 left-0 z-40" id="header" data-header aria-label="Cabeçalho principal com navegação do portfólio DevFenrir">
         <div class="border-b border-slate-700">
             <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-3 max-w-7xl mx-auto py-4 px-6 md:px-28"
                 data-itens-header>
@@ -117,7 +117,7 @@
                     DevFenrir
                 </h1>
 
-                <nav class="hidden md:flex flex-wrap justify-center gap-8">
+                <nav class="hidden md:flex flex-wrap justify-center gap-8" aria-label="Navegação principal">
                     <a data-i18n="nav-home" href="#secao-principal"
                         class="nav-link text-slate-400 hover:text-white transition duration-200"
                         data-items-item-1>início</a>
@@ -153,7 +153,7 @@
     <main>
 
         <!-- Seção Principal -->
-        <section class="text-slate-400" id="secao-principal">
+        <section class="text-slate-400" id="secao-principal" aria-label="Seção principal de descrição simples sobre mim">
             <div class="flex flex-col items-center mt-50 gap-4 pt-10">
                 <h2 class="text-6xl md:text-8xl text-white">Dev<strong class="text-blue-800">Fenrir</strong></h2>
                 <div class="flex items-center gap-4">
@@ -194,7 +194,7 @@
 
         <!-- Seção About me -->
         <section class="opacity-0 translate-y-5 transition-all duration-700 ease-in-out border-t border-slate-900 mt-52"
-            id="section-about-me" data-section-about-me>
+            id="section-about-me" data-section-about-me aria-label="Seção descritiva sobre mim, com mais detalhes sobre quem sou e o que faço">
             <div class="mt-30">
                 <h2 data-i18n="about-tittle"
                     class="text-neutral-200 text-center text-3xl pb-10 md:text-5xl sm:text-4xl sm:mb-10">Sobre mim</h2>
@@ -239,7 +239,7 @@
 
         <!-- Seção Habilidades -->
         <section class="opacity-0 translate-y-5 transition-all duration-700 ease-in-out mt-28 bg-gray-950/50"
-            id="section-habilidades" data-section-skills>
+            id="section-habilidades" data-section-skills aria-label="Seção de habilidades da página principal">
             <h2 data-i18n="habilidades-tittle"
                 class="text-neutral-200 text-center text-3xl pb-10 md:text-5xl sm:text-4xl sm:mb-10 pt-20">Habilidades
             </h2>
@@ -376,7 +376,7 @@
 
         <!-- Seção Projetos-->
         <section class="opacity-0 translate-y-5 transition-all duration-700 ease-in-out mt-0 pb-32"
-            id="section-projetos" data-section-projects>
+            id="section-projetos" data-section-projects aria-label="Seção de projetos já desenvolvidos por mim">
             <h2 data-i18n="projetos-tittle"
                 class="text-neutral-200 text-center text-3xl pb-10 md:text-5xl sm:text-4xl sm:mb-10 pt-20">Meus Projetos
             </h2>
@@ -507,7 +507,7 @@
 
         <!-- Seção Contact -->
         <section class="opacity-0 translate-y-5 transition-all duration-700 ease-in-out border-t border-slate-900 mt-34"
-            id="section-contatos" data-section-contact>
+            id="section-contatos" data-section-contact aria-label="Seção de contatos">
             <h2 data-i18n="contact-tittle"
                 class="text-neutral-200 text-center text-3xl pb-1 md:text-5xl sm:text-4xl sm:mb-10 pt-20">Contato</h2>
             <p data-i18n="contact-description" class="text-neutral-400 text-light text-center p-2 text-lg md:text-xl">
@@ -540,7 +540,7 @@
     </main>
 
     <!-- Rodapé -->
-    <footer class="mt-20">
+    <footer class="mt-20" aria-label="Rodapé do portfólio">
         <div class="border-t border-slate-900">
             <p data-i18n="footer-description" class="pt-10 pb-9 text-center text-neutral-400">© 2025 devfenrir todos os
                 direitos reservados.
