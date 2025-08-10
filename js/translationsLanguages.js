@@ -1,6 +1,6 @@
 const translations = {
 
- // Linguagem padrão - Português
+    // Linguagem padrão - Português
     pt: {
         "nav-home": "início",
         "nav-sobre": "sobre",
@@ -20,7 +20,6 @@ const translations = {
         "projetos-tittle": "Meus Projetos",
         "projetos-tittle-cadastro-project": "Cadastro de Usuário",
         "projetos-tittle-analysis-project": "Análise de Vendas",
-        "projetos-description-one": "EconoMy é um software desenvolvido em Java, projetado para simular uma conta bancária. Seu principal objetivo é oferecer ao usuário uma experiência segura e prática para realizar transferências e receber valores, funcionando como uma ferramenta de apoio financeiro.",
         "projetos-description-two": "Fyvo é uma fintech brasileira criada com o objetivo de ajudar as pessoas a organizar, acompanhar e melhorar o controle das suas finanças pessoais. Através de ferramentas simples e intuitivas, o projeto oferece apoio na administração de gastos, planejamento financeiro e construção de hábitos mais saudáveis com o dinheiro.",
         "projetos-description-three": "Este projeto é um sistema simples de cadastro de usuários, desenvolvido em Python puro. A persistência dos dados é feita utilizando o módulo JSON, garantindo o armazenamento e recuperação das informações de forma prática e eficiente.",
         "projetos-description-four": "Projeto de análise de dados de vendas utilizando SQL para consultas e extração de insights. Focado em gerar relatórios e métricas que ajudam a entender o desempenho comercial e apoiar a tomada de decisões.",
@@ -85,7 +84,6 @@ const translations = {
         "projetos-tittle": "My Projects",
         "projetos-tittle-cadastro-project": "User Registration",
         "projetos-tittle-analysis-project": "Sales Analysis",
-        "projetos-description-one": "EconoMy is a Java-based software designed to simulate a bank account. Its main goal is to offer users a secure and practical experience for making transfers and receiving funds, serving as a financial support tool.",
         "projetos-description-two": "Fyvo is a Brazilian fintech created to help people organize, monitor, and improve control over their personal finances. Through simple and intuitive tools, the project supports expense management, financial planning, and the development of healthier money habits.",
         "projetos-description-three": "This project is a simple user registration system developed in pure Python. Data persistence is handled using the JSON module, ensuring practical and efficient information storage and retrieval.",
         "projetos-description-four": "Sales data analysis project using SQL for queries and insights extraction. Focused on generating reports and metrics that help understand business performance and support decision-making.",
@@ -150,7 +148,6 @@ const translations = {
         "projetos-tittle": "Mis Proyectos",
         "projetos-tittle-cadastro-project": "Registro de Usuario",
         "projetos-tittle-analysis-project": "Análisis de Ventas",
-        "projetos-description-one": "EconoMy es un software desarrollado en Java, diseñado para simular una cuenta bancaria. Su principal objetivo es ofrecer al usuario una experiencia segura y práctica para realizar transferencias y recibir valores, funcionando como una herramienta de apoyo financiero.",
         "projetos-description-two": "Fyvo es una fintech brasileña creada para ayudar a las personas a organizar, seguir y mejorar el control de sus finanzas personales. A través de herramientas simples e intuitivas, el proyecto ofrece apoyo en la gestión de gastos, planificación financiera y construcción de hábitos más saludables con el dinero.",
         "projetos-description-three": "Este proyecto es un sistema simple de registro de usuarios, desarrollado en Python puro. La persistencia de datos se realiza utilizando el módulo JSON, garantizando el almacenamiento y recuperación de la información de forma práctica y eficiente.",
         "projetos-description-four": "Proyecto de análisis de datos de ventas utilizando SQL para consultas y extracción de insights. Enfocado en generar informes y métricas que ayuden a entender el rendimiento comercial y apoyar la toma de decisiones.",
