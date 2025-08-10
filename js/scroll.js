@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const sectionKills = document.querySelector('[data-section-skills]')
     const sectionSkillsItems = document.querySelector('[data-section-skills-items]')
     const sectionProjects = document.querySelector('[data-section-projects]')
-    const sectionContactComponent = document.querySelector('[data-section-contact]')
 
     const sectionProjectOne = document.querySelector('[data-project-one]')
     const sectionProjectTwo = document.querySelector('[data-project-two]')
@@ -51,5 +50,4 @@ document.addEventListener('DOMContentLoaded', () => {
     animacaoLado(sectionProjectOne, 2050)
     animacaoLado(sectionProjectTwo, 2070)
     animacaoLado(sectionProjectThree, 1690)
-    animateOnScroll(sectionContactComponent, 3300)
 })
