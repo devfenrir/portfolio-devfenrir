@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contentUi = document.querySelector('[data-section-user-interface-skills]')
     const contentUx = document.querySelector('[data-section-user-experience-skills]')
 
-    // Funcao responsável por detectar o elemento e a posicaoAtualScroll
+    // Função responsável por detectar o elemento e a posicaoAtualScroll
 
     function animateOnScroll(element, scrollPositionTrigger) {
         window.addEventListener('scroll', () => {

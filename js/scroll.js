@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    // Invocações das funções
+    // Chamada das funções
 
     animateOnScroll(sectionAboutMe, 290)
     animacaoLado(sectionDescricaoAbout, 500)

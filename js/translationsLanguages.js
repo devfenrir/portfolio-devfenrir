@@ -1,6 +1,7 @@
 const translations = {
 
     // Linguagem padrão - Português
+    
     pt: {
         "nav-home": "início",
         "nav-sobre": "sobre",
@@ -65,6 +66,7 @@ const translations = {
     },
 
     // Linguagem inglês
+
     en: {
         "nav-home": "home",
         "nav-sobre": "about",
@@ -129,6 +131,7 @@ const translations = {
     },
 
     // Linguagem español
+
     es: {
         "nav-home": "inicio",
         "nav-sobre": "sobre",
@@ -196,6 +199,7 @@ const translations = {
 
 
 // Função responsável por executar a tradução
+
 function updateLanguage(lang) {
 
     document.querySelectorAll("[data-i18n]").forEach(element => {
@@ -209,6 +213,7 @@ function updateLanguage(lang) {
 }
 
 // Seleciona o idioma e detecta a mudança no campo de idioma <select>
+
 const selectIdioma = document.getElementById("idioma");
 
 selectIdioma.addEventListener("change", e => {
@@ -217,6 +222,7 @@ selectIdioma.addEventListener("change", e => {
 
 
 // Prioriza o idioma padrão
+
 window.addEventListener("DOMContentLoaded", () => {
     updateLanguage(selectIdioma.value)
 });

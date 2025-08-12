@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const componentReturn = document.querySelector('[data-section-return]')
 
+    // Lógica que faz o botão return aparecer nas pages
+
     const scrollReturn = (component, scrollPosition) => {
         window.addEventListener('scroll', () => {
             if (window.scrollY > scrollPosition) {

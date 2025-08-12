@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const whatsappComponent = document.querySelector('[data-section-whatsapp]')
 
+    // Lógica do botão de whatsapp 
+
     const scrollWhatsapp = (component, scrollPosition) => {
         window.addEventListener('scroll', () => {
             if (window.scrollY > scrollPosition) {
@@ -20,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     };
+
+    // Chamada do scrollWhatsapp
 
     scrollWhatsapp(whatsappComponent, 200)
 
