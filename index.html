@@ -103,10 +103,21 @@
             background: #011650;
             color: #ffffff;
         }
+
+        .degrade-effect {
+            background-color: #000000;
+            background-image:
+                linear-gradient(to bottom,
+                    rgba(1, 22, 80, 0.3),
+                    transparent 10%),
+                linear-gradient(to top,
+                    rgba(1, 22, 80, 0.3),
+                    transparent 10%);
+        }
     </style>
 </head>
 
-<body class="bg-black font-[Sora]">
+<body class="degrade-effect font-[Sora]">
 
     <!-- Header -->
     <header class="fixed top-0 right-0 left-0 z-40" id="header" data-header
@@ -476,7 +487,8 @@
         </section>
 
         <!-- Seção Contact -->
-        <section class="opacity-100 translate-y-5 transition-all duration-700 ease-in-out border-t border-slate-900 mt-34"
+        <section
+            class="opacity-100 translate-y-5 transition-all duration-700 ease-in-out border-t border-slate-900 mt-34"
             id="section-contatos" data-section-contact aria-label="Seção de contatos">
             <h2 data-i18n="contact-tittle"
                 class="text-neutral-200 text-center text-3xl pb-1 md:text-5xl sm:text-4xl sm:mb-10 pt-20">Contato</h2>
