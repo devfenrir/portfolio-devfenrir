@@ -30,6 +30,5 @@ document.addEventListener('DOMContentLoaded', () => {
     animateOnScroll(contentGithubGit, 680)
     animateOnScroll(contentTests, 1040)
     animateOnScroll(contentUi, 1500)
-    animateOnScroll(contentUx, 1900)
 
 })

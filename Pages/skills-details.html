@@ -102,13 +102,25 @@
             background: #011650;
             color: #ffffff;
         }
+
+        .degrade-effect {
+            background-color: #000000;
+            background-image:
+                linear-gradient(to bottom,
+                    rgba(1, 22, 80, 0.3),
+                    transparent 10%),
+                linear-gradient(to top,
+                    rgba(1, 22, 80, 0.3),
+                    transparent 10%);
+        }
     </style>
 </head>
 
-<body class="bg-black font-[Sora] min-h-screen">
+<body class="degrade-effect font-[Sora] min-h-screen">
 
     <!-- Header -->
-    <header class="fixed top-0 right-0 left-0 z-40" id="header" data-header aria-label="Cabeçalho principal com navegação do portfólio DevFenrir">
+    <header class="fixed top-0 right-0 left-0 z-40" id="header" data-header
+        aria-label="Cabeçalho principal com navegação do portfólio DevFenrir">
         <div class="border-b border-slate-700 flex flex-col md:flex-row md:items-center md:justify-between md:px-10">
             <div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto py-3 2xl:py-1 px-4 md:py-5 lg:py-2 sm:py-2 w-full"
                 data-itens-header>
@@ -129,7 +141,8 @@
         </div>
     </header>
 
-    <main class="pt-[150px] 2xl:mt-[160px]" aria-label="Parte principal do site onde estão todas as habilidades detalhadas">
+    <main class="pt-[150px] 2xl:mt-[160px]"
+        aria-label="Parte principal do site onde estão todas as habilidades detalhadas">
 
         <!-- Programação Web -->
         <section class="px-4 2xl:px-[73px]" data-section-programacao-web>

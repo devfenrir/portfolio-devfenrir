@@ -118,13 +118,25 @@
             background: #011650;
             color: #ffffff;
         }
+
+        .degrade-effect {
+            background-color: #000000;
+            background-image:
+                linear-gradient(to bottom,
+                    rgba(1, 22, 80, 0.3),
+                    transparent 10%),
+                linear-gradient(to top,
+                    rgba(1, 22, 80, 0.3),
+                    transparent 10%);
+        }
     </style>
 </head>
 
-<body class="bg-black font-[Sora] min-h-screen">
+<body class="degrade-effect font-[Sora] min-h-screen">
 
     <!-- Header -->
-    <header class="fixed top-0 right-0 left-0 z-40" id="header" data-header aria-label="Cabeçalho principal com navegação do portfólio DevFenrir">
+    <header class="fixed top-0 right-0 left-0 z-40" id="header" data-header
+        aria-label="Cabeçalho principal com navegação do portfólio DevFenrir">
         <div class="border-b border-slate-700 flex flex-col md:flex-row md:items-center md:justify-between md:px-10">
             <div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto py-3 2xl:py-1 px-4 md:py-5 lg:py-2 sm:py-2 w-full"
                 data-itens-header>
@@ -145,11 +157,13 @@
         </div>
     </header>
 
-    <main class="pt-[150px] 2xl:mt-[160px]" aria-label="Cabeçalho principal do site onde estão todas as certificações obtidas no percurso profissional">
+    <main class="pt-[150px] 2xl:mt-[160px]"
+        aria-label="Cabeçalho principal do site onde estão todas as certificações obtidas no percurso profissional">
 
         <!-- Título e Linha inicial -->
         <div class="flex flex-col items-center">
-            <h2 data-i18n="comunicacao-profissional" class="text-slate-400 pb-6 text-center text-[22.2px] xl:text-[32px]">Certificados Profissionais</h2>
+            <h2 data-i18n="comunicacao-profissional"
+                class="text-slate-400 pb-6 text-center text-[22.2px] xl:text-[32px]">Certificados Profissionais</h2>
             <span class="w-[283px] border-b border-gray-900"></span>
         </div>
 
@@ -161,7 +175,8 @@
                 <div class="flex flex-col items-center">
                     <img class="w-80 sm:w-100 lg:w-110 xl:w-80 2xl:w-90" src="/assets/comunicação-certificado.png"
                         alt="certificado de comunicação pela universidade FIAP">
-                    <h3 data-i18n="comunicacao" class="text-slate-300 text-xl pt-2 border-b border-slate-700">Comunicação</h3>
+                    <h3 data-i18n="comunicacao" class="text-slate-300 text-xl pt-2 border-b border-slate-700">
+                        Comunicação</h3>
                     <p data-i18n="comunicacao-description"
                         class="text-slate-500 text-center text-[14px] w-65 sm:w-81 pt-4 lg:w-110 xl:w-90 xl:text-[13px] 2xl:text-[16px]">
                         Durante o curso, compreendi que a
@@ -177,7 +192,8 @@
                     <img class="w-80 sm:w-100 lg:w-110 xl:w-80 2xl:w-90"
                         src="/assets/logica-de-programacao-certificacao.png"
                         alt="certificado de lógica de programação pela universidade FIAP">
-                    <h3 data-i18n="logica-de-programacao" class="text-slate-300 text-xl pt-2 border-b border-slate-700">Lógica de Programação</h3>
+                    <h3 data-i18n="logica-de-programacao" class="text-slate-300 text-xl pt-2 border-b border-slate-700">
+                        Lógica de Programação</h3>
                     <p data-i18n="logica-de-programacao-description"
                         class="text-slate-500 text-center text-[14px] w-65 sm:w-81 pt-4 lg:w-110 xl:w-90 xl:text-[13px] 2xl:text-[16px]">
                         Neste curso, aprendi os fundamentos da
@@ -192,7 +208,8 @@
                 <div class="flex flex-col items-center">
                     <img class="w-80 sm:w-100 lg:w-110 xl:w-80 2xl:w-90" src="/assets/java-fundamentos-certificados.png"
                         alt="certificado de fundamentos de java pela universidade FIAP">
-                    <h3 data-i18n="fundamentos-java" class="text-slate-300 text-xl pt-2 border-b border-slate-700">Fundamentos de Java</h3>
+                    <h3 data-i18n="fundamentos-java" class="text-slate-300 text-xl pt-2 border-b border-slate-700">
+                        Fundamentos de Java</h3>
                     <p data-i18n="fundamentos-java-description"
                         class="text-slate-500 text-center text-[14px] w-65 sm:w-81 pt-4 lg:w-110 xl:w-90 xl:text-[13px] 2xl:text-[16px]">
                         Neste curso, aprendi os fundamentos da
@@ -227,7 +244,8 @@
                     <img class="w-80 sm:w-100 lg:w-110 xl:w-80 2xl:w-90"
                         src="/assets/tailwind-css-estilizando-sua-pagina-certificacao.png"
                         alt="certificado de tailwind css pela Alura">
-                    <h3 data-i18n="tailwind-css" class="text-slate-300 text-xl border-b border-slate-700">Tailwind CSS - framework</h3>
+                    <h3 data-i18n="tailwind-css" class="text-slate-300 text-xl border-b border-slate-700">Tailwind CSS -
+                        framework</h3>
                     <p data-i18n="tailwind-css-description"
                         class="text-slate-500 text-center text-[14px] w-65 sm:w-81 pt-4 lg:w-110 xl:w-90 xl:text-[13px] 2xl:text-[16px]">
                         Neste curso, aprendi a desenvolver
@@ -243,7 +261,8 @@
                     <img class="w-80 sm:w-100 lg:w-110 xl:w-80 2xl:w-90"
                         src="/assets/python-primeira-aplicacao-certificacao.png"
                         alt="certificado de desenvolvimento em python pela Alura">
-                    <h3 data-i18n="primeiro-app-python" class="text-slate-300 text-xl border-b border-slate-700">Primeiro app Python</h3>
+                    <h3 data-i18n="primeiro-app-python" class="text-slate-300 text-xl border-b border-slate-700">
+                        Primeiro app Python</h3>
                     <p data-i18n="primeiro-app-python-description"
                         class="text-slate-500 text-center text-[14px] w-65 sm:w-81 pt-4 lg:w-110 xl:w-90 xl:text-[13px] 2xl:text-[16px]">
                         Neste curso, desenvolvi minha primeira
@@ -292,7 +311,8 @@
                 <div class="flex flex-col items-center">
                     <img class="w-80 sm:w-100 lg:w-110 xl:w-80 2xl:w-90" src="/assets/sql-basic.png"
                         alt="certificado de SQL pela Alura">
-                    <h3 data-i18n="sql-manipulacao-dados" class="text-slate-300 text-xl border-b border-slate-700">SQL - manipulando dados</h3>
+                    <h3 data-i18n="sql-manipulacao-dados" class="text-slate-300 text-xl border-b border-slate-700">SQL -
+                        manipulando dados</h3>
                     <p data-i18n="sql-manipulacao-dados-description"
                         class="text-slate-500 text-center text-[14px] w-65 sm:w-81 pt-4 lg:w-110 xl:w-90 xl:text-[13px] 2xl:text-[16px]">
                         Neste curso, aprendi a manipular dados
@@ -316,7 +336,8 @@
     </main>
     <footer class="mt-50">
         <div class="border-t border-slate-900">
-            <p data-i18n="footer-description" class="pt-10 pb-9 text-center text-neutral-400">© 2025 devfenrir todos os direitos reservados.
+            <p data-i18n="footer-description" class="pt-10 pb-9 text-center text-neutral-400">© 2025 devfenrir todos os
+                direitos reservados.
             </p>
         </div>
     </footer>
