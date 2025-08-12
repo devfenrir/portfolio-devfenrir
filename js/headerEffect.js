@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Variáveis que marcam os elementos 
+
     const headerComponent = document.querySelector('[data-header]')
     const headerItemOne = document.querySelector('[data-items-item-1]')
     const headerItemTwo = document.querySelector('[data-items-item-2]')
@@ -7,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerItemFour = document.querySelector('[data-items-item-4]')
     const headerItemFive = document.querySelector('[data-items-item-5]')
     const headerItemSix = document.querySelector('[data-items-item-6]')
+
+    // Atua na estrutura de component do header
 
     function animateHeader(scrollPositionTrigger) {
         window.addEventListener('scroll', () => {
@@ -32,6 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
+    // Atua diretamente nos itens do header
+
     function animateHeaderItems(scrollPositionTrigger) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > scrollPositionTrigger) {
@@ -51,6 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
     }
+
+    // Chamada de função
 
     animateHeader(50)
     animateHeaderItems(50)
