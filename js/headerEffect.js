@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerItemFour = document.querySelector('[data-items-item-4]')
     const headerItemFive = document.querySelector('[data-items-item-5]')
     const headerItemSix = document.querySelector('[data-items-item-6]')
+    const logoFenrir = document.querySelector('[data-logo-fenrir]')
+
 
     // Atua na estrutura de component do header
 
@@ -47,6 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 headerItemFour.classList.add('text-slate-500', 'transition-all')
                 headerItemFive.classList.add('text-slate-500', 'transition-all')
                 headerItemSix.classList.add('text-slate-500', 'transition-all')
+                logoFenrir.classList.add('opacity-0', 'transition-all')
+
             } else {
                 headerItemOne.classList.remove('text-slate-500', 'transition-all')
                 headerItemTwo.classList.remove('text-slate-500', 'transition-all')
@@ -54,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 headerItemFour.classList.remove('text-slate-500', 'transition-all')
                 headerItemFive.classList.remove('text-slate-500', 'transition-all')
                 headerItemSix.classList.remove('text-slate-500', 'transition-all')
+
             }
         })
     }
